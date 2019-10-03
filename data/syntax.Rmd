@@ -1,0 +1,850 @@
+---
+title: "Syntax - Personality Predicts Mobile Application Usage"
+author: "Clemens Stachl & Jiew-Quay Au (Ludwig-Maximilians-Universität München)"
+date: "13. Februar 2017"
+output: html_document
+---
+***
+First we load that csv data file as well as some necessary packages.
+```{r}
+# load required packages
+library(glmnet)
+library(stabs)
+#install_github("hofnerb/stabs")
+mydatatest <- read.csv2("data.csv", check.names = FALSE) 
+mydatatest[,1] <- NULL
+dim(mydatatest)
+str(mydatatest)
+
+```
+
+Prepare analysis - frequencies and avg_durations
+Consequently, we prepare the data for our analysis of the FREQUENCY data.
+
+```{r}
+# set a seed
+set.seed(5684) 
+
+# define criteria
+criteria_freq <- colnames(mydatatest[, 41:67]) 
+criteria_dur <- colnames(mydatatest[,68:94])
+criteria_f <- colnames(mydatatest[,41:67])
+criteria_d <- colnames(mydatatest[,68:94])
+
+# select app categories with enough variance
+criteria_freq <- names(apply(mydatatest[,criteria_freq], 2, mad))[apply(mydatatest[,criteria_freq], 2, mad) > 0.0001] 
+criteria_dur <- names(apply(mydatatest[,criteria_dur], 2, mad))[apply(mydatatest[,criteria_dur], 2, mad) > 0.0001]
+
+#these criteria were not selected based on the applied median absolute deviation cutoff:
+setdiff(criteria_f, criteria_freq)
+length(setdiff(criteria_f, criteria_freq))
+setdiff(criteria_d, criteria_dur)
+length(setdiff(criteria_d, criteria_dur))
+
+rm(criteria_f, criteria_d)
+
+# all the remaining app categories
+# Usage Durations
+criteria_dur
+
+# Usage Frequencies
+criteria_freq
+
+# Outlier detection and handeling frequency data
+for(i in criteria_freq){
+  z <- (log(mydatatest[,i]+1)-median(log(mydatatest[,i]+1)))/mad(log(mydatatest[,i]+1))
+  index <- which(z > 3) # change to any number
+  if(length(index) > 0){
+    
+    #winsorize
+    print(paste(i, length(index)))
+    mydatatest[index,i] <- max(mydatatest[-index,i])
+  }
+}
+
+# Outlier detection and handeling duration data
+for(i in criteria_dur){
+  z <- (log(mydatatest[,i]+1)-median(log(mydatatest[,i]+1)))/mad(log(mydatatest[,i]+1))
+  index <- which(z > 3) # change to any number
+  if(length(index) > 0){
+    
+    #winsorize
+    print(paste(i, length(index)))
+    mydatatest[index,i] <- max(mydatatest[-index,i])
+  }
+}
+
+rm(i, z, index)
+
+
+criteriax <- c(criteria_freq,criteria_freq)
+criteriay <- c(criteria_dur, criteria_dur)
+
+#define predictorvariables factor level
+predictorsfact <- colnames(mydatatest[,c(2:5, 6,13,20,27,34)])
+predictorsfact
+
+#define predictorvariables facet level
+predictorsfacet <- colnames(mydatatest[,c(2:5, 7:12, 14:19, 21:26, 28:33, 35:40)])
+predictorsfacet
+
+# define the predictors for all models
+predictors <- as.list(numeric(length(criteriax)))
+predictors[1:length(criteria_freq)] <- lapply(1:length(criteria_freq), function(x) predictorsfact); predictors[(length(criteria_freq)+1):length(criteriax)] <- lapply(1:length(criteria_freq), function(x) predictorsfacet)
+
+```
+
+In this section we define two functions in order to apply our LASSO and stability selection analysis on all criteria
+
+
+
+```{r}
+
+#Stability Selection Functions
+select <- function(d, p, q, B, PFER, cutoff){
+  tryCatch({
+    require(glmnet); require(stabs); require(lars)
+    stabsel(y = mydatatest[,c(d)], x = as.matrix(mydatatest[,c(p)]),
+            fitfun = glmnet.lasso, # change to lars.lasso
+            cutoff= cutoff,
+            PFER = PFER,
+            sampling.type= "SS",
+            q=q, 
+            #type=type,
+            args.fitfun = list(family="poisson", type="anticonservative"))
+       
+  },error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+} 
+
+#__________________________________________________________________
+
+selvar <- function(d){
+  tryCatch({
+      x <- paste0("stabset$","`",d,"`","$selected")
+      x <- eval(parse(text = x)) 
+      x <- as.numeric(x)
+      x <- paste0("stabset$","`",d,"`","$max[c(",paste0(x, collapse = ","),")]")
+      eval(parse(text = x))
+    
+  }, error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+}
+
+
+#__________________________________________________________________
+selprob <- function(d){
+  tryCatch({
+      x <- paste0("stabset$","`",d,"`","$max")
+      eval(parse(text = x))
+    
+  }, error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+}
+
+
+selprobf <- function(d){
+  tryCatch({
+      x <- paste0("stabsetf$","`",d,"`","$max")
+      eval(parse(text = x))
+    
+  }, error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+}
+
+```
+
+
+```{r}
+PFER = 0.2
+qFAC=0
+qFACET=0
+cutoff=0.699
+```
+
+
+
+Feature selection at factor and facet level - this can take some seconds.
+
+```{r}
+## FACTORS
+# lapply on datasets - create tables/data frames
+stabset <- Map(select, d = criteria_freq, p = predictors[1:length(criteria_freq)], cutoff=cutoff,
+               #q=qFAC, 
+               PFER=PFER)
+
+names(stabset) <- criteria_freq
+selectprobs <- lapply(names(stabset), selprob) # change to selprobs for all probabilities
+names(selectprobs) <- criteria_freq
+stabFAC <- stabset
+
+
+# result of one stability selection procedure
+stabFAC[1]
+
+selectionFAC <-data.frame(matrix(ncol=length(criteria_freq), nrow = length(predictorsfact)))
+colnames(selectionFAC) <- criteria_freq
+rownames(selectionFAC) <- predictorsfact
+
+for(i in criteria_freq){
+ a <- selectprobs[1:length(criteria_freq)][[i]]
+ if(length(a) > 0) {
+ for(j in 1:length(a)){
+  names(a)[j] 
+  selectionFAC[names(a)[j],i]<- as.numeric(round(a[j], digits = 2))
+  }
+ }
+}
+
+
+# FACETS
+set.seed(5684)
+stabsetf <- Map(select, d = criteria_freq, p = predictors[20:length(predictors)], cutoff=cutoff, PFER=PFER)
+names(stabsetf) <- criteria_freq
+selectprobsf <- lapply(names(stabsetf), selprobf) # change to selprobs for all probabilities
+names(selectprobsf) <- criteria_freq
+stabFACET <- stabsetf 
+
+
+#INSERT THE STUFF FROM ABOVE
+
+
+# result of one stability selection procedure
+stabFACET[1]
+
+selectionFACET <-data.frame(matrix(ncol=length(criteria_freq), nrow = length(predictorsfacet)))
+colnames(selectionFACET) <- criteria_freq
+rownames(selectionFACET) <- predictorsfacet
+
+for(i in criteria_freq){
+  a <- selectprobsf[1:length(criteria_freq)][[i]]
+  if(length(a) > 0) {
+    for(j in 1:length(a)){
+      names(a)[j] 
+      selectionFACET[names(a)[j],i]<- as.numeric(round(a[j], digits = 2))
+    }
+  }
+}
+
+# create a vector with successful predictable criteria
+
+critfac <- names(stabFAC)[sapply(stabFAC, function(x) sum(x$selected) > 0)]
+critfacet <- names(stabFACET)[sapply(stabFACET, function(x) sum(x$selected) > 0)]
+
+```
+
+Compute Quasi-Poisson models using the selected predictors
+
+```{r}
+
+quasimodoF <- function(d){
+  tryCatch({
+    x <- paste0("stabset$","`",d,"`","$selected")
+    x <- eval(parse(text = x)) 
+    x <- names(x)
+    x <- glm(as.formula(paste0("`",d,"`","~","`", paste0(x, collapse = "`+`"),"`")), data=mydatatest, family = quasipoisson(link = "log"))
+  },error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+} 
+
+quasimodoFX <- function(d){
+  tryCatch({
+    x <- paste0("stabsetf$","`",d,"`","$selected")
+    x <- eval(parse(text = x)) 
+    x <- names(x)
+    x <- glm(as.formula(paste0("`",d,"`","~","`", paste0(x, collapse = "`+`"),"`")), data=mydatatest, family = quasipoisson(link = "log"))
+  },error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+} 
+
+
+
+
+```
+
+```{r}
+# lapply the function and create lists with the results of the glm models
+quasiFAC <- lapply(critfac, quasimodoF)
+names(quasiFAC) <- critfac
+quasiFAC[1]
+
+# create a data.frame for the results
+FinalFAC <-data.frame(matrix(ncol=length(quasiFAC), nrow = dim(selectionFAC)[1]))
+colnames(FinalFAC) <- names(quasiFAC)
+rownames(FinalFAC) <- predictorsfact
+
+#extract coefficients from the lists 
+for(i in names(Filter(Negate(is.null), quasiFAC))){
+  x <- paste0("quasiFAC$","`",i,"`","$coefficients[2:", paste0("length(quasiFAC$","`",i,"`","$coefficients)]"))
+  y <- eval(parse(text = x))
+  names(y) <- gsub("`","",names(y),ignore.case=T)
+  for(l in 1:length(y)){
+    
+    FinalFAC[names(y)[l],i] <- as.numeric(round(exp(y[[l]]), digits = 2))
+  }
+}
+
+# lapply the function and create lists with the results of the glm models
+quasiFACET <- lapply(critfacet, quasimodoFX)
+names(quasiFACET) <- critfacet
+
+# result of an glm
+quasiFACET[3]
+
+# create a data.frame for the results
+FinalFACET <-data.frame(matrix(ncol=length(quasiFACET), nrow = dim(selectionFACET)[1]))
+colnames(FinalFACET) <- names(quasiFACET)
+rownames(FinalFACET) <- predictorsfacet
+
+# extract coefficients from the lists
+for(i in names(Filter(Negate(is.null), quasiFACET))){
+  x <- paste0("quasiFACET$","`",i,"`","$coefficients[2:", paste0("length(quasiFACET$","`",i,"`","$coefficients)]"))
+  y <- eval(parse(text = x))
+  names(y) <- gsub("`","",names(y),ignore.case=T)
+  for(l in 1:length(y)){
+    
+    FinalFACET[names(y)[l],i] <- as.numeric(round(exp(y[[l]]), digits = 2))
+    
+  }
+}
+FinalFACET
+```
+
+
+
+
+Remove all columns and rows without a single coefficient from FinalFAC and FinalFACET
+```{r}
+# Remove all columns and rows without a single coefficient from FinalFAC and FinalFACET
+
+
+# select columns and rows with at least one coefficient - this is not relevant anymore - all probabilties are included
+FinalFAC <- FinalFAC[rowSums(is.na(FinalFAC)) != ncol(FinalFAC),]
+FinalFAC <- FinalFAC[,colSums(is.na(FinalFAC)) !=nrow(FinalFAC)]
+FinalFAC
+
+
+# select columns and rows with at least one coefficient - this is not relevant anymore - all probabilties are included
+FinalFACET <- FinalFACET[rowSums(is.na(FinalFACET)) != ncol(FinalFACET),]
+FinalFACET <- FinalFACET[,colSums(is.na(FinalFACET)) !=nrow(FinalFACET)]
+FinalFACET
+
+
+```
+
+
+
+Calculation of the model fits, Dawid-Sebastiani score (DSS)
+```{r}
+# define a function for model fit calculation
+montedawid <- function(target, holdout = 0.9, iters = 100){
+  ds = rep(NA, iters)
+  ds = list(ds, ds)
+  names(ds) = c("factors", "facets")
+  for(i in 1:iters){
+    # perform subsampling 
+    index <- sample(1:nrow(mydatatest))[1:(floor(holdout*nrow(mydatatest)))]
+    train <- mydatatest[index,]
+    test <- mydatatest[-index,]
+    
+    #FACTORS
+    if (target %in% names(FinalFAC)){
+      xFAC <- glm(as.formula(paste0("`",target,"`","~","`", paste0(rownames(selectionFAC[which(!is.na(selectionFAC[,target])),]), collapse = "`+`"),"`")),
+                  data=train, family = quasipoisson(link = "log"))
+      summaryxFAC <- summary(xFAC)
+      summaryxFAC$dispersion
+      muFAC <- predict(xFAC, test, type="response")
+      ds$factors[i] <- mean((test[target]-muFAC)^2/(summaryxFAC$dispersion*muFAC) + 2*log(muFAC*summaryxFAC$dispersion))
+    }
+    
+    #FACETS
+    if (target %in% names(FinalFACET)){
+      xFACET <- glm(as.formula(paste0("`",target,"`","~","`", paste0(rownames(selectionFACET[which(!is.na(selectionFACET[,target])),]), collapse = "`+`"),"`")),
+                    data=train, family = quasipoisson(link = "log"))
+      summaryxFACET <- summary(xFACET)
+      summaryxFACET$dispersion
+      muFACET <- predict(xFACET, test, type="response")
+      ds$facets[i] <- mean((test[target]-muFACET)^2/(summaryxFACET$dispersion*muFACET) + 2*log(muFACET*summaryxFACET$dispersion))
+    }
+  }
+  lapply(ds, function(x) round(mean(x),digits = 2))
+}
+######PROBLEMS PROBLEMS
+# lapply the function on all criteria and add the DSS
+set.seed(258)
+performanceMontedawid <- lapply(critfac, montedawid) 
+names(performanceMontedawid) <- critfac
+
+performanceMontedawidF <- lapply(critfacet, montedawid)
+names(performanceMontedawidF) <-  critfacet
+
+dssFAC<- unlist(performanceMontedawid)[c(TRUE, FALSE)]
+names(dssFAC) <- gsub(names(dssFAC), pattern = ".factors", replacement = "")  
+FinalFAC[nrow(FinalFAC)+1,] <- dssFAC
+rownames(FinalFAC)[nrow(FinalFAC)] <- "Mean DSS"
+
+dssFACET <- unlist(performanceMontedawidF)[c(FALSE,TRUE)]
+names(dssFACET) <- gsub(names(dssFACET), pattern = ".facets", replacement = "")  
+FinalFACET[nrow(FinalFACET)+1,] <- dssFACET
+rownames(FinalFACET)[nrow(FinalFACET)] <- "Mean DSS"
+
+
+# paste feature selection and glm scores together
+# add all selection probabilities
+completeFAC <- data.frame(matrix(nrow=nrow(FinalFAC), ncol =ncol(FinalFAC)))
+
+colnames(completeFAC) <- colnames(FinalFAC)
+rownames(completeFAC) <- rownames(FinalFAC)
+
+for(i in 1: (nrow(completeFAC)-1)){
+  for(j in 1: ncol(completeFAC)){
+    x <- rownames(completeFAC)[i]
+    y <- colnames(completeFAC)[j]
+   completeFAC[i,j] <-  selectionFAC[x,y]
+   if(!is.na(FinalFAC[x,y])) completeFAC[i,j] <- paste(completeFAC[i,j], FinalFAC[x,y], sep = " | ")
+    }
+}
+
+# re-add the DSS
+completeFAC["Mean DSS",] <- FinalFAC["Mean DSS",]
+
+# add the GLM coefficients
+
+completeFACET <- data.frame(matrix(nrow=nrow(FinalFACET), ncol =ncol(FinalFACET)))
+
+colnames(completeFACET) <- colnames(FinalFACET)
+rownames(completeFACET) <- rownames(FinalFACET)
+
+for(i in 1: (nrow(completeFACET)-1)){
+  for(j in 1: ncol(completeFACET)){
+    x <- rownames(completeFACET)[i]
+    y <- colnames(completeFACET)[j]
+   completeFACET[i,j] <-  selectionFACET[x,y]
+   if(!is.na(FinalFACET[x,y])) completeFACET[i,j] <- paste(completeFACET[i,j], FinalFACET[x,y], sep = " | ")
+    }
+}
+
+completeFACET["Mean DSS",] <- FinalFACET["Mean DSS",]
+
+
+```
+
+In the paper version of the tables the *"Unknown"* category is not included. This categoriy includes all the not categorized apps as well as rarely used apps. See the appcategories.csv for more information.
+
+```{r}
+# with this code you can remove the "Unknown" category
+completeFAC$freq_Unknown <- NULL
+completeFACET$freq_Unknown <- NULL
+
+print(completeFAC)
+print(completeFACET)
+
+```
+
+
+Consequently, we prepare the data for our analysis of the DURATION data.
+
+```{r}
+
+# define the predictors for all models
+predictorsy <- as.list(numeric(length(criteriay)))
+predictorsy[1:length(criteria_dur)] <- lapply(1:length(criteria_dur), function(x) predictorsfact); predictorsy[(length(criteria_dur)+1):length(criteriay)] <- lapply(1:length(criteria_dur), function(x) predictorsfacet)
+
+```
+
+Now we perform stability selection with regularized LASSO regressions and assumtion of "Gamma" distributions.
+```{r}
+# 
+## FACTORS
+# lapply on datasets - create tables/data frames
+stabset <- Map(select, d = criteria_dur, p = predictorsy[1:length(criteria_dur)], cutoff=cutoff, PFER=PFER)
+
+names(stabset) <- criteria_dur
+selectprobs <- lapply(names(stabset), selprob) # change to selprobs for all probabilities
+names(selectprobs) <- criteria_dur
+stabFACdur <- stabset
+
+# result of one stability selection procedure
+stabFACdur[1]
+
+selectionFACdur <-data.frame(matrix(ncol=length(criteria_dur), nrow = length(predictorsfact)))
+colnames(selectionFACdur) <- criteria_dur
+rownames(selectionFACdur) <- predictorsfact
+
+for(i in criteria_dur){
+ a <- selectprobs[1:length(criteria_dur)][[i]]
+ if(length(a) > 0) {
+ for(j in 1:length(a)){
+  names(a)[j] 
+  selectionFACdur[names(a)[j],i]<- as.numeric(round(a[j], digits = 2))
+  }
+ }
+}
+
+
+# FACETS
+set.seed(5684)
+stabsetf <- Map(select, d = criteria_dur, p = predictorsy[19:length(predictorsy)], cutoff=cutoff, PFER=PFER)
+names(stabsetf) <- criteria_dur
+selectprobsf <- lapply(names(stabsetf), selprobf) # change to selprobs for all probabilities
+names(selectprobsf) <- criteria_dur
+stabFACETdur <- stabsetf 
+
+
+# result of one stability selection procedure
+stabFACETdur[1]
+
+selectionFACETdur <-data.frame(matrix(ncol=length(criteria_dur), nrow = length(predictorsfacet)))
+colnames(selectionFACETdur) <- criteria_dur
+rownames(selectionFACETdur) <- predictorsfacet
+
+for(i in criteria_dur){
+  a <- selectprobsf[1:length(criteria_dur)][[i]]
+  if(length(a) > 0) {
+    for(j in 1:length(a)){
+      names(a)[j] 
+      selectionFACETdur[names(a)[j],i]<- as.numeric(round(a[j], digits = 2))
+    }
+  }
+}
+
+# create a vector with successful predictable criteria
+
+critfacD <- names(stabFACdur)[sapply(stabFACdur, function(x) sum(x$selected) > 0)]
+critfacetD <- names(stabFACETdur)[sapply(stabFACETdur, function(x) sum(x$selected) > 0)]
+
+
+```
+
+
+```{r}
+# lapply the function and create lists with the results of the glm models
+quasiFACd <- lapply(critfacD, quasimodoF)
+names(quasiFACd) <- critfacD
+quasiFACd[1]
+
+# create a data.frame for the results
+FinalFACd <-data.frame(matrix(ncol=length(quasiFACd), nrow = dim(selectionFACdur)[1]))
+colnames(FinalFACd) <- names(quasiFACd)
+rownames(FinalFACd) <- predictorsfact
+
+#extract coefficients from the lists 
+for(i in names(Filter(Negate(is.null), quasiFACd))){
+  x <- paste0("quasiFACd$","`",i,"`","$coefficients[2:", paste0("length(quasiFACd$","`",i,"`","$coefficients)]"))
+  y <- eval(parse(text = x))
+  names(y) <- gsub("`","",names(y),ignore.case=T)
+  for(l in 1:length(y)){
+    
+    FinalFACd[names(y)[l],i] <- as.numeric(round(exp(y[[l]]), digits = 2))
+  }
+}
+
+# lapply the function and create lists with the results of the glm models
+quasiFACETd <- lapply(critfacetD, quasimodoFX)
+names(quasiFACETd) <- critfacetD
+
+# result of an glm
+quasiFACETd[3]
+
+# create a data.frame for the results
+FinalFACETd <-data.frame(matrix(ncol=length(quasiFACETd), nrow = dim(selectionFACETdur)[1]))
+colnames(FinalFACETd) <- names(quasiFACETd)
+rownames(FinalFACETd) <- predictorsfacet
+
+# extract coefficients from the lists
+for(i in names(Filter(Negate(is.null), quasiFACETd))){
+  x <- paste0("quasiFACETd$","`",i,"`","$coefficients[2:", paste0("length(quasiFACETd$","`",i,"`","$coefficients)]"))
+  y <- eval(parse(text = x))
+  names(y) <- gsub("`","",names(y),ignore.case=T)
+  for(l in 1:length(y)){
+    
+    FinalFACETd[names(y)[l],i] <- as.numeric(round(exp(y[[l]]), digits = 2))
+    
+  }
+}
+FinalFACETd
+```
+
+
+```{r}
+# Remove all columns and rows without a single coefficient from FinalFAC and FinalFACET
+
+
+FinalFACd <- FinalFACd[rowSums(is.na(FinalFACd)) != ncol(FinalFACd),]
+FinalFACd <- FinalFACd[,colSums(is.na(FinalFACd)) !=nrow(FinalFACd)]
+FinalFACd
+
+FinalFACETd <- FinalFACETd[rowSums(is.na(FinalFACETd)) != ncol(FinalFACETd),]
+FinalFACETd <- FinalFACETd[,colSums(is.na(FinalFACETd)) !=nrow(FinalFACETd)]
+FinalFACETd
+
+
+```
+
+
+Calculation of the model fits, Dawid-Sebastiani score (DSS)
+```{r}
+# define a function for model fit calculation
+montedawidDUR <- function(target, holdout = 0.9, iters = 100){
+  ds = rep(NA, iters)
+  ds = list(ds, ds)
+  names(ds) = c("factors", "facets")
+  for(i in 1:iters){
+    # perform subsampling 
+    index <- sample(1:nrow(mydatatest))[1:(floor(holdout*nrow(mydatatest)))]
+    train <- mydatatest[index,]
+    test <- mydatatest[-index,]
+    
+    #FACTORS
+    if (target %in% names(FinalFACd)){
+      xFAC <- glm(as.formula(paste0("`",target,"`","~","`", paste0(rownames(selectionFACdur[which(!is.na(selectionFACdur[,target])),]), collapse = "`+`"),"`")),
+                  data=train, family = quasipoisson(link = "log"))
+      summaryxFAC <- summary(xFAC)
+      summaryxFAC$dispersion
+      muFAC <- predict(xFAC, test, type="response")
+      ds$factors[i] <- mean((test[target]-muFAC)^2/(summaryxFAC$dispersion*muFAC) + 2*log(muFAC*summaryxFAC$dispersion))
+    }
+    
+    #FACETS
+    if (target %in% names(FinalFACETd)){
+      xFACET <- glm(as.formula(paste0("`",target,"`","~","`", paste0(rownames(selectionFACETdur[which(!is.na(selectionFACETdur[,target])),]), collapse = "`+`"),"`")),
+                    data=train, family = quasipoisson(link = "log"))
+      summaryxFACET <- summary(xFACET)
+      summaryxFACET$dispersion
+      muFACET <- predict(xFACET, test, type="response")
+      ds$facets[i] <- mean((test[target]-muFACET)^2/(summaryxFACET$dispersion*muFACET) + 2*log(muFACET*summaryxFACET$dispersion))
+    }
+  }
+  lapply(ds, function(x) round(mean(x),digits = 2))
+}
+set.seed(258)
+performanceMontedawid <- lapply(critfacD, montedawidDUR) 
+names(performanceMontedawid) <- critfacD
+
+performanceMontedawidF <- lapply(critfacetD, montedawidDUR)
+names(performanceMontedawidF) <-  critfacetD
+
+dssFACd<- unlist(performanceMontedawid)[c(TRUE, FALSE)]
+names(dssFACd) <- gsub(names(dssFACd), pattern = ".factors", replacement = "")  
+FinalFACd[nrow(FinalFACd)+1,] <- dssFACd
+rownames(FinalFACd)[nrow(FinalFACd)] <- "Mean DSS"
+
+dssFACETd<- unlist(performanceMontedawidF)[c(FALSE,TRUE)]
+names(dssFACETd) <- gsub(names(dssFACETd), pattern = ".facets", replacement = "")  
+FinalFACETd[nrow(FinalFACETd)+1,] <- dssFACETd
+rownames(FinalFACETd)[nrow(FinalFACETd)] <- "Mean DSS"
+
+
+# paste feature selection and glm scores together
+# add all selection probabilities
+completeFACd <- data.frame(matrix(nrow=nrow(FinalFACd), ncol =ncol(FinalFACd)))
+
+colnames(completeFACd) <- colnames(FinalFACd)
+rownames(completeFACd) <- rownames(FinalFACd)
+
+for(i in 1: (nrow(completeFACd)-1)){
+  for(j in 1: ncol(completeFACd)){
+    x <- rownames(completeFACd)[i]
+    y <- colnames(completeFACd)[j]
+   completeFACd[i,j] <-  selectionFACdur[x,y]
+   if(!is.na(FinalFACd[x,y])) completeFACd[i,j] <- paste(completeFACd[i,j], FinalFACd[x,y], sep = " | ")
+    }
+}
+
+# re-add the DSS
+completeFACd["Mean DSS",] <- FinalFACd["Mean DSS",]
+
+# add the GLM coefficients
+
+completeFACETd <- data.frame(matrix(nrow=nrow(FinalFACETd), ncol =ncol(FinalFACETd)))
+
+colnames(completeFACETd) <- colnames(FinalFACETd)
+rownames(completeFACETd) <- rownames(FinalFACETd)
+
+for(i in 1: (nrow(completeFACETd)-1)){
+  for(j in 1: ncol(completeFACETd)){
+    x <- rownames(completeFACETd)[i]
+    y <- colnames(completeFACETd)[j]
+   completeFACETd[i,j] <-  selectionFACETdur[x,y]
+   if(!is.na(FinalFACETd[x,y])) completeFACETd[i,j] <- paste(completeFACETd[i,j], FinalFACETd[x,y], sep = " | ")
+    }
+}
+
+completeFACETd["Mean DSS",] <- FinalFACETd["Mean DSS",]
+
+
+```
+
+In the paper version of the tables the *"Unknown"* category is not included. This categoriy includes all the not categorized apps as well as rarely used apps. See the appcategories.csv for more information.
+
+```{r}
+# with this code you can remove the "Unknown" category
+  completeFACd$dur_Unknown <- NULL
+completeFACETd$dur_Unknown <- NULL
+
+print(completeFACd)
+print(completeFACETd)
+
+```
+
+
+Here follows the code to reproduce the reported correlations, including CIs 
+
+```{r}
+
+# small table
+cors <- as.data.frame(round(cor(as.matrix(mydatatest[, predictorsfact]), method = "spearman", use = "pairwise.complete.obs"),digits = 2))
+
+# large table
+rel <- c(predictorsfact,criteria_freq, criteria_dur)
+allcorr <- as.data.frame(round(cor(as.matrix(mydatatest[, rel]), method = "spearman", use = "pairwise.complete.obs"), digits = 2))
+#colnames(allcorr) <- c(1:length(allcorr))
+colnames(allcorr) <- rownames(allcorr)
+allcorr <- allcorr[10:nrow(allcorr),1:9]
+
+
+```
+
+Calculate confidence intervals for the correlations
+
+```{r, message=FALSE}
+library(mada)
+
+# small table
+for (i in 2:nrow(cors)) {
+  for (j in 1:(i-1)) {
+    tryCatch({
+    if(as.numeric(cors[i,j]) == 1){
+      print(as.numeric(cors[i,j]))
+    } else {
+      cr <- CIrho(as.numeric(cors[i,j]), 137, level = 0.95)
+    cr <- paste(round(cr[1], digits = 2), " [", round(cr[2], digits = 2), ", ", round(cr[3], digits = 2), "]", sep = "")
+    cors[i,j] <- cr
+                  }
+              },error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+             }
+           }
+
+# remove the upper triangle
+cors[upper.tri(cors)] <- ""
+
+
+# large table
+for (i in 1:nrow(allcorr)) {
+  for (j in 1:ncol(allcorr)) {
+    tryCatch({
+      if(as.numeric(allcorr[i,j]) == 1){
+        print(as.numric(allcorr[i,j]))
+      } else {
+        cr <- CIrho(as.numeric(allcorr[i,j]), 137, level = 0.95)
+        cr <- paste(round(cr[1], digits = 2), " [", round(cr[2], digits = 2), ", ", round(cr[3], digits = 2), "]", sep = "")
+        allcorr[i,j] <- cr
+      }
+    },error = function(e){cat("ERROR :", conditionMessage(e), "\n")})
+  }
+}
+
+allcorr <- allcorr[setdiff(rownames(allcorr), "Unknown"),]
+
+# print the correlation tables
+print(cors)
+print(allcorr)
+
+
+```
+
+Code for the calculation of the variance inflation factor
+```{r, message=FALSE}
+library(usdm)
+
+predictorsfact
+vif(mydatatest[, predictorsfact])
+
+```
+
+Here we calculate summary statistics ... 
+```{r}
+library(psych)
+descriptives <- as.data.frame(describe(mydatatest, fast = FALSE))
+descriptives <- descriptives[3:nrow(descriptives),] # remove ID and Gender
+descriptives <- descriptives[,3:ncol(descriptives)]
+```
+
+... and Cronbach's alpha coefficients for the personality scales
+```{r}
+library(haven)
+library(GPArotation)
+# import the raw item values 
+INSBAT <- read.csv2(file="INSBAT.csv")
+BFSI <- read.csv2(file="BFSI.csv")
+
+# calculate mean reliability and standard deviations for the INSBAT
+insREL <- paste0("Num:",mean(na.omit(INSBAT$NIDREL))," | Ver:", mean(na.omit(INSBAT$VDDREL))," | Fig:", mean(na.omit(INSBAT$FIDREL)))
+insRELsd <- paste0("Num:",sd(na.omit(INSBAT$NIDREL))," | Ver:", sd(na.omit(INSBAT$VDDREL))," | Fig:", sd(na.omit(INSBAT$FIDREL)))
+
+# do some magic to find the right ids
+alpha <- data.frame(matrix(nrow=35, ncol=2))
+
+x <- expand.grid(c("N", "E", "O", "C", "A"), c(1:6))
+x <- paste0(x$Var1, x$Var2)
+x <- c(x[sort(grep("N", x))], x[sort(grep("E", x))],x[sort(grep("O", x))],x[sort(grep("C", x))],x[sort(grep("A", x))], "N", "E", "O", "C", "A")
+
+rownames(alpha) <- x
+colnames(alpha) <- c("CI_L","CI_U")
+
+# Cronbach alpha FACETS
+crownseq <- seq(6, 305, by=10)
+
+alphac <- vector(length = length(crownseq)+5, mode = "list")
+names(alphac) <- x
+
+# calculate Chronbach's alpha for the facets
+ z = 1
+for(i in crownseq){
+  alphac[[z]] <- alpha(BFSI[,c(i:(i+9))], na.rm = TRUE, check.keys = FALSE)
+  z <- z+1
+}
+
+for(i in names(alphac[1:30])){
+  raw <- alphac[[i]]$total$raw_alpha
+  ase <- alphac[[i]]$total$ase
+  ciL <- raw - 1.96*ase
+  ciU <- raw + 1.96*ase
+  alpha[i,] <- c(ciL,ciU)
+}
+
+ # Cronbach alpha - FACTORS
+f <- seq(6, 305, by=60)
+z = 31
+for(i in f){
+alphac[[z]] <- alpha(BFSI[,c(i:(i+59))], na.rm = TRUE, check.keys = FALSE)
+ print(c("items", i, "bis", i+59, "done"))
+ z <- z+1
+}
+
+for(i in names(alphac[31:35])){
+  raw <- alphac[[i]]$total$raw_alpha
+  ase <- alphac[[i]]$total$ase
+  ciL <- raw - 1.96*ase
+  ciU <- raw + 1.96*ase
+  alpha[i,] <- c(ciL,ciU)
+}
+
+# add the values to the summary table
+rownames(alpha)
+rownames(descriptives)
+
+descriptives$CI_L = NA
+descriptives$CI_U = NA
+index = sapply(rownames(alpha)[1:30], function(x) grep(x, rownames(descriptives)))
+descriptives$CI_L[index] = alpha$CI_L[1:30]
+descriptives$CI_U[index] = alpha$CI_U[1:30]
+descriptives["Emotional.Stability..N.", ]$CI_L = alpha["N", ]$CI_L
+descriptives["Extraversion..E.", ]$CI_L = alpha["E", ]$CI_L
+descriptives["Openness..O.", ]$CI_L = alpha["O", ]$CI_L
+descriptives["Conscientiousness..C.", ]$CI_L = alpha["C", ]$CI_L
+descriptives["Agreeableness..A.", ]$CI_L = alpha["A", ]$CI_L
+
+descriptives["Emotional.Stability..N.", ]$CI_U = alpha["N", ]$CI_U
+descriptives["Extraversion..E.", ]$CI_U = alpha["E", ]$CI_U
+descriptives["Openness..O.", ]$CI_U = alpha["O", ]$CI_U
+descriptives["Conscientiousness..C.", ]$CI_U = alpha["C", ]$CI_U
+descriptives["Agreeableness..A.", ]$CI_U = alpha["A", ]$CI_U
+```
+
+
+Done.
