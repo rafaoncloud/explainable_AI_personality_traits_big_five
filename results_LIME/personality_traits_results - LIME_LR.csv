@@ -1,0 +1,176 @@
+index,instance,trait,trait_real,trait_predicted,low_prob,high_prob,most_contribute,most_contribute_2,most_contribute_3,most_contribute_4,most_contribute_5,most_contribute_to_low,most_contribute_to_high,accuracy
+0,82,Extraversion,1,0,0.96496897,0.03503103,freq_Shopping,dur_Shopping,freq_Medical,dur_Personalization,freq_calls,freq_Shopping,dur_Shopping,0.6285714286
+1,120,Extraversion,0,0,0.59316864,0.40683136,freq_Shopping,freq_calls,freq_Unknown,dur_Personalization,freq_Medical,freq_Shopping,freq_calls,0.6285714286
+2,52,Extraversion,0,1,4.08E-05,0.99995924,freq_Shopping,dur_Shopping,freq_Unknown,freq_Medical,dur_Personalization,freq_Shopping,dur_Shopping,0.6285714286
+3,16,Extraversion,1,1,0.30157519,6.98E-01,dur_Shopping,freq_Medical,dur_Personalization,freq_Books...Reference,dur_Health...Fitness,freq_Medical,dur_Shopping,0.6285714286
+4,72,Extraversion,1,0,0.61569572,0.38430428,dur_Shopping,freq_Medical,freq_Shopping,dur_Personalization,dur_calls,dur_Shopping,freq_Shopping,0.6285714286
+5,109,Extraversion,0,1,0.22136075,0.77863925,dur_Shopping,freq_Medical,dur_Personalization,dur_calls,dur_Health...Fitness,dur_Shopping,dur_Personalization,0.6285714286
+6,17,Extraversion,1,1,0.00099306,0.99900694,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_Business,dur_Shopping,freq_Shopping,0.6285714286
+7,118,Extraversion,1,0,0.99999955,4.48E-07,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,dur_Books...Reference,dur_Shopping,freq_Shopping,0.6285714286
+8,105,Extraversion,1,0,0.99999246,7.54E-06,dur_Shopping,freq_calls,freq_Medical,freq_Unknown,dur_Personalization,dur_Shopping,freq_calls,0.6285714286
+9,75,Extraversion,0,0,0.98993691,1.01E-02,dur_Shopping,freq_Shopping,dur_Personalization,freq_Medical,dur_calls,dur_Shopping,freq_Shopping,0.6285714286
+10,73,Extraversion,0,1,0.01851358,0.98148642,dur_Shopping,freq_calls,freq_Medical,freq_Shopping,dur_Personalization,dur_Shopping,freq_calls,0.6285714286
+11,44,Extraversion,0,0,0.53360743,0.46639257,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_Business,dur_Shopping,freq_Shopping,0.6285714286
+12,64,Extraversion,0,0,0.99762166,0.00237834,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_calls,dur_Shopping,freq_Shopping,0.6285714286
+13,26,Extraversion,1,1,0.47743579,0.52256421,dur_Shopping,freq_Shopping,dur_calls,freq_Medical,dur_Personalization,dur_Shopping,freq_Shopping,0.6285714286
+14,122,Extraversion,1,1,0.02566501,0.97433499,dur_Shopping,freq_calls,freq_Shopping,freq_Medical,dur_Personalization,dur_Shopping,freq_calls,0.6285714286
+15,61,Extraversion,0,1,0.4807576,5.19E-01,dur_Shopping,freq_Shopping,freq_Medical,dur_calls,dur_Personalization,dur_Shopping,freq_Shopping,0.6285714286
+16,124,Extraversion,0,0,0.91188624,0.08811376,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,dur_calls,dur_Shopping,freq_Shopping,0.6285714286
+17,97,Extraversion,1,1,0.13679327,0.86320673,dur_Shopping,freq_Shopping,freq_Medical,freq_Unknown,dur_Personalization,dur_Shopping,freq_Shopping,0.6285714286
+18,2,Extraversion,0,1,0.01274854,0.98725146,freq_Shopping,freq_Medical,dur_Personalization,dur_Social,dur_Health...Fitness,freq_Shopping,dur_Personalization,0.6285714286
+19,48,Extraversion,1,0,0.99999987,1.32E-07,dur_Shopping,freq_Shopping,dur_Personalization,freq_Medical,freq_calls,dur_Shopping,freq_Shopping,0.6285714286
+20,78,Extraversion,0,0,6.64E-01,0.33566499,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_Travel...Local,dur_Shopping,freq_Shopping,0.6285714286
+21,51,Extraversion,0,0,0.99374987,6.25E-03,freq_Medical,dur_Personalization,dur_calls,freq_Business,dur_Comics,freq_Medical,freq_Shopping,0.6285714286
+22,20,Extraversion,0,1,0.25132712,0.74867288,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_News...Magazines,dur_Shopping,freq_Shopping,0.6285714286
+23,8,Extraversion,0,0,0.88277025,0.11722975,freq_Unknown,freq_Medical,dur_Personalization,freq_Business,freq_Books...Reference,freq_Medical,freq_Unknown,0.6285714286
+24,90,Extraversion,0,0,0.97613026,0.02386974,dur_Shopping,freq_Medical,freq_Unknown,dur_Personalization,freq_calls,dur_Shopping,freq_Unknown,0.6285714286
+25,67,Extraversion,1,1,2.48E-05,1.00E+00,freq_Medical,freq_Unknown,dur_Personalization,freq_Business,freq_Shopping,freq_Medical,freq_Unknown,0.6285714286
+26,77,Extraversion,1,1,0.07069818,0.92930182,dur_Shopping,freq_Medical,dur_Personalization,freq_calls,freq_Transportation,dur_Shopping,dur_Personalization,0.6285714286
+27,114,Extraversion,0,0,0.72708589,0.27291411,freq_Shopping,freq_Medical,freq_Unknown,dur_Personalization,freq_calls,freq_Shopping,freq_Medical,0.6285714286
+28,14,Extraversion,0,0,0.63930452,0.36069548,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,dur_Comics,dur_Shopping,freq_Shopping,0.6285714286
+29,54,Extraversion,1,0,0.73387437,0.26612563,dur_Shopping,freq_Shopping,freq_Medical,dur_calls,dur_Personalization,dur_Shopping,freq_Shopping,0.6285714286
+30,13,Extraversion,0,0,0.96920564,0.03079436,dur_Shopping,freq_calls,freq_Shopping,freq_Medical,dur_Personalization,dur_Shopping,freq_calls,0.6285714286
+31,103,Extraversion,1,0,0.96689793,0.03310207,freq_Medical,dur_Personalization,freq_Business,freq_News...Magazines,freq_Shopping,freq_Medical,dur_Personalization,0.6285714286
+32,43,Extraversion,1,1,0.06485157,0.93514843,dur_Shopping,freq_Shopping,freq_Medical,dur_Personalization,freq_Unknown,dur_Shopping,freq_Shopping,0.6285714286
+33,7,Extraversion,1,1,0.122825,8.77E-01,dur_Shopping,freq_calls,freq_Medical,dur_Personalization,freq_Business,dur_Shopping,freq_calls,0.6285714286
+34,108,Extraversion,0,0,0.87313816,0.12686184,freq_Shopping,freq_Medical,dur_Personalization,freq_Business,dur_Health...Fitness,freq_Shopping,dur_Personalization,0.6285714286
+0,82,Agreeableness,1,1,0.00509624,0.99490376,dur_Education,freq_Sports,freq_Transportation,freq_Communication,freq_Social,freq_Communication,dur_Education,0.6285714286
+1,120,Agreeableness,0,1,0.01492573,0.98507427,freq_Sports,freq_Transportation,dur_Lifestyle,freq_Communication,freq_calls,freq_Communication,freq_Sports,0.6285714286
+2,52,Agreeableness,0,0,0.99999967,3.30E-07,freq_Sports,dur_Education,freq_Travel...Local,freq_Shopping,freq_Entertainment,freq_Travel...Local,freq_Sports,0.6285714286
+3,16,Agreeableness,0,0,0.86501001,1.35E-01,freq_Sports,dur_Education,freq_Medical,freq_Health...Fitness,freq_Communication,dur_Education,freq_Sports,0.6285714286
+4,72,Agreeableness,1,1,0.00731246,0.99268754,dur_Education,freq_Sports,freq_Medical,freq_Communication,dur_Lifestyle,freq_Medical,dur_Education,0.6285714286
+5,109,Agreeableness,1,0,0.99950459,0.00049541,freq_Sports,freq_Medical,freq_Travel...Local,dur_Lifestyle,freq_News...Magazines,freq_Medical,freq_Sports,0.6285714286
+6,17,Agreeableness,1,1,0.01278032,0.98721968,freq_Sports,dur_Education,freq_Medical,dur_Lifestyle,freq_Communication,dur_Education,freq_Sports,0.6285714286
+7,118,Agreeableness,0,0,0.9628749,0.0371251,freq_Sports,freq_Medical,dur_Lifestyle,freq_Communication,dur_News...Magazines,freq_Sports,freq_Communication,0.6285714286
+8,105,Agreeableness,1,1,0.00038603,0.99961397,dur_Education,freq_Sports,freq_Communication,freq_Lifestyle,freq_calls,dur_Education,freq_Sports,0.6285714286
+9,75,Agreeableness,1,1,0.23955652,7.60E-01,dur_Education,freq_Sports,freq_Communication,freq_Medical,freq_Travel...Local,freq_Sports,dur_Education,0.6285714286
+10,73,Agreeableness,0,1,0.09068049,0.90931951,freq_Sports,dur_Education,freq_calls,freq_Medical,freq_Transportation,dur_Education,freq_Sports,0.6285714286
+11,44,Agreeableness,0,1,3.13E-08,0.99999997,dur_Education,freq_Sports,freq_Medical,freq_Communication,dur_Lifestyle,freq_Medical,dur_Education,0.6285714286
+12,64,Agreeableness,0,0,0.99728854,0.00271146,freq_Sports,dur_Education,freq_Medical,freq_Communication,freq_Transportation,dur_Education,freq_Sports,0.6285714286
+13,26,Agreeableness,1,1,0.27635043,0.72364957,freq_Sports,dur_Education,dur_Lifestyle,freq_Medical,freq_Communication,dur_Education,freq_Sports,0.6285714286
+14,122,Agreeableness,1,1,0.03991488,0.96008512,freq_Sports,dur_Education,freq_calls,freq_Medical,freq_Transportation,dur_Education,freq_Sports,0.6285714286
+15,61,Agreeableness,1,0,0.82810678,1.72E-01,dur_Education,freq_Sports,freq_Entertainment,freq_Medical,dur_Lifestyle,freq_Entertainment,dur_Education,0.6285714286
+16,124,Agreeableness,0,0,0.81521415,0.18478585,freq_Sports,dur_Education,freq_Transportation,freq_Medical,dur_Lifestyle,dur_Education,freq_Sports,0.6285714286
+17,97,Agreeableness,0,1,0.30626556,0.69373444,freq_Transportation,freq_Sports,dur_Education,freq_Medical,dur_Lifestyle,dur_Education,freq_Transportation,0.6285714286
+18,2,Agreeableness,1,1,0.20112191,0.79887809,dur_Education,freq_Sports,dur_News...Magazines,freq_Shopping,freq_Medical,dur_News...Magazines,dur_Education,0.6285714286
+19,48,Agreeableness,1,1,5.49E-07,0.99999945,freq_Sports,dur_Education,freq_Transportation,freq_Communication,freq_Medical,freq_Sports,freq_Communication,0.6285714286
+20,78,Agreeableness,0,0,0.99995005,4.99E-05,dur_Education,freq_Sports,freq_Travel...Local,freq_Communication,dur_News...Magazines,freq_Travel...Local,dur_Education,0.6285714286
+21,51,Agreeableness,1,1,0.17253248,8.27E-01,freq_Sports,dur_Education,freq_Medical,freq_Social,freq_Communication,dur_Education,freq_Sports,0.6285714286
+22,20,Agreeableness,0,0,0.76569676,0.23430324,freq_Sports,dur_Education,dur_News...Magazines,freq_Medical,dur_Lifestyle,dur_Education,freq_Sports,0.6285714286
+23,8,Agreeableness,1,0,0.90693075,0.09306925,freq_Sports,dur_Education,freq_Communication,freq_Entertainment,freq_Medical,dur_Education,freq_Sports,0.6285714286
+24,90,Agreeableness,1,0,0.99478496,0.00521504,freq_Sports,dur_Education,freq_Communication,freq_Medical,dur_Lifestyle,freq_Sports,freq_Communication,0.6285714286
+25,67,Agreeableness,0,0,9.89E-01,0.01135996,freq_Sports,dur_Education,dur_Lifestyle,freq_Communication,freq_Lifestyle,dur_Education,freq_Sports,0.6285714286
+26,77,Agreeableness,1,0,0.96806385,0.03193615,dur_Education,freq_Sports,freq_Transportation,dur_Lifestyle,freq_Medical,dur_Lifestyle,dur_Education,0.6285714286
+27,114,Agreeableness,0,1,0.04897534,0.95102466,freq_Sports,dur_Education,dur_Lifestyle,freq_Lifestyle,dur_News...Magazines,freq_Sports,dur_Education,0.6285714286
+28,14,Agreeableness,0,0,0.76853445,0.23146555,dur_Education,freq_Sports,freq_Travel...Local,freq_Medical,dur_Lifestyle,freq_Medical,dur_Education,0.6285714286
+29,54,Agreeableness,1,0,0.71557759,0.28442241,freq_Sports,dur_Lifestyle,dur_News...Magazines,freq_Medical,freq_News...Magazines,dur_News...Magazines,freq_Sports,0.6285714286
+30,13,Agreeableness,1,1,0.36242424,0.63757576,freq_Sports,dur_Education,freq_calls,freq_Communication,freq_Medical,freq_Sports,freq_calls,0.6285714286
+31,103,Agreeableness,1,0,0.99911933,0.00088067,freq_Sports,freq_Travel...Local,dur_Education,freq_Communication,freq_Medical,freq_Travel...Local,freq_Sports,0.6285714286
+32,43,Agreeableness,1,0,0.99614192,0.00385808,freq_Sports,dur_Education,dur_News...Magazines,freq_Entertainment,dur_Lifestyle,dur_Education,freq_Sports,0.6285714286
+33,7,Agreeableness,0,0,0.99998535,1.47E-05,dur_Education,freq_Sports,freq_Communication,freq_Travel...Local,freq_calls,freq_Communication,dur_Education,0.6285714286
+34,108,Agreeableness,0,0,0.8555693,0.1444307,freq_Sports,dur_Education,freq_Lifestyle,freq_Shopping,freq_Medical,freq_Sports,dur_Education,0.6285714286
+0,82,Conscientiousness,1,1,0.20107755,0.79892245,dur_Education,freq_Games,dur_Shopping,freq_Shopping,dur_Finance,freq_Games,dur_Education,0.5714285714
+1,120,Conscientiousness,0,0,0.88246056,0.11753944,freq_Games,freq_Shopping,freq_Books...Reference,dur_Finance,dur_Education,freq_Games,freq_Shopping,0.5714285714
+2,52,Conscientiousness,0,0,0.98299421,0.01700579,dur_Education,freq_Games,dur_Shopping,freq_Shopping,dur_Finance,freq_Games,dur_Education,0.5714285714
+3,16,Conscientiousness,1,1,0.47927541,0.52072459,dur_Education,dur_Shopping,freq_Health...Fitness,dur_Finance,freq_Games,dur_Education,dur_Shopping,0.5714285714
+4,72,Conscientiousness,1,1,0.00022402,0.99977598,dur_Education,dur_Shopping,dur_Finance,dur_Business,dur_Browser,dur_Shopping,dur_Education,0.5714285714
+5,109,Conscientiousness,1,1,0.12123664,0.87876336,dur_Shopping,freq_Games,dur_Finance,dur_Sports,dur_Browser,dur_Shopping,freq_Games,0.5714285714
+6,17,Conscientiousness,1,0,0.99798217,0.00201783,dur_Education,dur_Shopping,dur_Business,freq_Games,dur_Finance,dur_Education,freq_Games,0.5714285714
+7,118,Conscientiousness,1,1,0.22167327,0.77832673,dur_Shopping,freq_Games,dur_Browser,dur_Business,dur_Finance,dur_Shopping,freq_Games,0.5714285714
+8,105,Conscientiousness,1,1,0.37656633,0.62343367,freq_Games,dur_Education,dur_Shopping,freq_Books...Reference,dur_Finance,freq_Games,dur_Finance,0.5714285714
+9,75,Conscientiousness,1,0,0.99624367,0.00375633,dur_Education,freq_Games,freq_Health...Fitness,dur_Finance,dur_Shopping,freq_Games,dur_Education,0.5714285714
+10,73,Conscientiousness,0,1,0.1742956,0.8257044,dur_Education,dur_Shopping,freq_Games,dur_Finance,freq_Health...Fitness,dur_Education,freq_Games,0.5714285714
+11,44,Conscientiousness,0,1,1.96E-13,1,dur_Education,dur_Shopping,dur_Finance,dur_Browser,dur_Business,dur_Shopping,dur_Education,0.5714285714
+12,64,Conscientiousness,1,0,0.86602343,0.13397657,freq_Games,dur_Education,dur_Shopping,dur_Finance,freq_Books...Reference,freq_Games,dur_Finance,0.5714285714
+13,26,Conscientiousness,0,1,0.18220806,0.81779194,dur_Education,freq_Games,dur_Shopping,dur_Finance,freq_Health...Fitness,dur_Education,freq_Games,0.5714285714
+14,122,Conscientiousness,1,1,0.13966543,0.86033457,dur_Education,dur_Shopping,dur_Finance,freq_Games,dur_Business,dur_Education,dur_Finance,0.5714285714
+15,61,Conscientiousness,0,1,0.0006198,0.9993802,dur_Education,dur_Shopping,dur_Browser,dur_Finance,freq_Books...Reference,dur_Shopping,dur_Education,0.5714285714
+16,124,Conscientiousness,0,1,0.3811904,0.6188096,dur_Education,dur_Shopping,freq_Games,dur_Business,dur_Finance,dur_Education,freq_Games,0.5714285714
+17,97,Conscientiousness,1,1,0.0631524,0.9368476,dur_Education,dur_Shopping,freq_Games,dur_Finance,dur_Browser,dur_Education,freq_Games,0.5714285714
+18,2,Conscientiousness,0,1,0.00060702,0.99939298,dur_Education,freq_Games,freq_Shopping,dur_Browser,dur_Finance,freq_Games,dur_Education,0.5714285714
+19,48,Conscientiousness,0,0,1,4.70E-11,freq_Games,dur_Education,dur_Shopping,dur_Business,dur_Finance,freq_Games,dur_Finance,0.5714285714
+20,78,Conscientiousness,0,1,0.04997709,0.95002291,dur_Education,dur_Shopping,dur_Finance,dur_News...Magazines,freq_Games,dur_Shopping,dur_Education,0.5714285714
+21,51,Conscientiousness,0,0,0.92707571,0.07292429,freq_Games,dur_Education,dur_Finance,dur_Browser,freq_Health...Fitness,freq_Games,dur_Finance,0.5714285714
+22,20,Conscientiousness,1,1,0.28603764,0.71396236,dur_Education,dur_Shopping,dur_News...Magazines,freq_Health...Fitness,dur_Finance,dur_Education,freq_Health...Fitness,0.5714285714
+23,8,Conscientiousness,0,1,0.4717631,0.5282369,dur_Education,freq_Books...Reference,freq_Games,dur_Finance,freq_Health...Fitness,dur_Education,freq_Games,0.5714285714
+24,90,Conscientiousness,1,0,0.99885943,0.00114057,dur_Education,freq_Health...Fitness,dur_Shopping,dur_Finance,dur_Sports,dur_Education,dur_Finance,0.5714285714
+25,67,Conscientiousness,0,0,0.99999998,2.17E-08,dur_Education,freq_Games,dur_Finance,freq_Books...Reference,freq_Social,dur_Education,freq_Games,0.5714285714
+26,77,Conscientiousness,1,1,0.01508599,0.98491401,dur_Education,freq_Games,dur_Shopping,dur_Finance,dur_Sports,dur_Shopping,dur_Education,0.5714285714
+27,114,Conscientiousness,0,0,0.9999994,6.00E-07,dur_Education,freq_Games,freq_Health...Fitness,freq_Shopping,dur_Business,freq_Games,dur_Education,0.5714285714
+28,14,Conscientiousness,0,1,0.00198365,0.99801635,dur_Education,dur_Shopping,freq_Games,dur_Finance,dur_Browser,dur_Shopping,dur_Education,0.5714285714
+29,54,Conscientiousness,0,0,0.8714664,0.1285336,dur_Shopping,dur_Business,dur_Browser,dur_News...Magazines,freq_Books...Reference,dur_Shopping,dur_Browser,0.5714285714
+30,13,Conscientiousness,1,1,0.21284254,0.78715746,dur_Education,dur_Shopping,dur_Finance,freq_Games,dur_Games,dur_Education,dur_Finance,0.5714285714
+31,103,Conscientiousness,0,1,0.14193772,0.85806228,dur_Education,freq_Games,dur_Finance,dur_Business,freq_Health...Fitness,dur_Education,freq_Games,0.5714285714
+32,43,Conscientiousness,0,1,0.4455792,0.5544208,dur_Education,freq_Health...Fitness,dur_Shopping,dur_Finance,dur_News...Magazines,dur_Education,dur_Finance,0.5714285714
+33,7,Conscientiousness,1,1,0.43637933,0.56362067,dur_Education,freq_Health...Fitness,dur_Shopping,dur_Finance,dur_Browser,freq_Health...Fitness,dur_Education,0.5714285714
+34,108,Conscientiousness,1,1,0.04587812,0.95412188,dur_Education,freq_Shopping,dur_Finance,dur_Browser,freq_Sports,dur_Finance,dur_Education,0.5714285714
+0,82,Openness,1,1,0.32345953,0.67654047,dur_Comics,freq_Communication,freq_Social,freq_Books...Reference,freq_Productivity,freq_Communication,dur_Comics,0.6857142857
+1,120,Openness,0,0,0.99928751,0.00071249,freq_Entertainment,dur_Comics,freq_Social,freq_Communication,freq_calls,freq_Social,freq_Entertainment,0.6857142857
+2,52,Openness,0,0,1,1.63E-13,freq_Travel...Local,freq_Entertainment,dur_Comics,freq_Books...Reference,freq_Media...Video,freq_Travel...Local,freq_Entertainment,0.6857142857
+3,16,Openness,1,1,0.09789165,0.90210835,freq_Social,dur_Comics,freq_Productivity,freq_Books...Reference,freq_Communication,freq_Social,dur_Comics,0.6857142857
+4,72,Openness,1,0,0.99807214,0.00192786,dur_Comics,freq_Communication,freq_Sports,freq_Medical,freq_Entertainment,freq_Medical,dur_Comics,0.6857142857
+5,109,Openness,0,0,0.99374371,0.00625629,dur_Comics,freq_Travel...Local,freq_Sports,dur_Shopping,freq_Education,freq_Education,dur_Comics,0.6857142857
+6,17,Openness,1,1,0.08494793,0.91505207,dur_Comics,freq_Travel...Local,dur_Games,freq_Communication,freq_Entertainment,dur_Games,dur_Comics,0.6857142857
+7,118,Openness,1,1,0.00588884,0.99411116,dur_Comics,freq_Weather,freq_Communication,freq_Sports,freq_Education,freq_Weather,dur_Comics,0.6857142857
+8,105,Openness,1,0,0.99984377,0.00015623,freq_Communication,freq_calls,dur_Comics,freq_Books...Reference,dur_Games,freq_Communication,freq_calls,0.6857142857
+9,75,Openness,1,1,0.08943643,0.91056357,dur_Comics,freq_Travel...Local,freq_Communication,freq_Entertainment,freq_Sports,freq_Entertainment,dur_Comics,0.6857142857
+10,73,Openness,0,1,0.01288766,0.98711234,dur_Comics,freq_calls,freq_Travel...Local,freq_Sports,freq_Entertainment,freq_Entertainment,dur_Comics,0.6857142857
+11,44,Openness,0,0,0.5320913,0.4679087,dur_Comics,freq_Communication,freq_Sports,freq_Entertainment,freq_calls,freq_Entertainment,dur_Comics,0.6857142857
+12,64,Openness,0,1,0.04250576,0.95749424,dur_Comics,freq_Media...Video,freq_Books...Reference,freq_Communication,freq_Sports,freq_Media...Video,dur_Comics,0.6857142857
+13,26,Openness,1,1,0.05327264,0.94672736,dur_Comics,freq_Communication,freq_Travel...Local,freq_Sports,dur_Sports,freq_Entertainment,dur_Comics,0.6857142857
+14,122,Openness,1,1,0.07527364,0.92472636,dur_Comics,freq_calls,freq_Weather,freq_Communication,freq_Productivity,freq_Weather,dur_Comics,0.6857142857
+15,61,Openness,0,0,0.99764847,0.00235153,dur_Comics,freq_Entertainment,freq_Books...Reference,freq_Media...Video,freq_Productivity,dur_Comics,freq_Entertainment,0.6857142857
+16,124,Openness,1,0,0.94336547,0.05663453,dur_Comics,dur_Games,dur_Sports,freq_Sports,freq_Medical,dur_Games,dur_Comics,0.6857142857
+17,97,Openness,1,1,0.04959538,0.95040462,dur_Comics,freq_Books...Reference,freq_Weather,freq_Travel...Local,freq_Sports,freq_Weather,dur_Comics,0.6857142857
+18,2,Openness,1,0,0.54329798,0.45670202,dur_Comics,freq_Travel...Local,freq_Communication,freq_Sports,freq_Entertainment,freq_Entertainment,dur_Comics,0.6857142857
+19,48,Openness,1,0,1,2.39E-09,dur_Comics,dur_Games,freq_Communication,freq_Travel...Local,freq_Sports,dur_Games,dur_Comics,0.6857142857
+20,78,Openness,0,0,0.8267545,0.1732455,freq_Travel...Local,dur_Comics,freq_Communication,freq_Entertainment,freq_Photography,freq_Travel...Local,dur_Comics,0.6857142857
+21,51,Openness,0,0,0.81945239,0.18054761,dur_Comics,freq_Social,freq_Communication,freq_Sports,freq_Business,freq_Social,dur_Comics,0.6857142857
+22,20,Openness,0,1,0.08442199,0.91557801,dur_Comics,freq_Social,freq_Productivity,freq_Travel...Local,freq_Weather,freq_Social,dur_Comics,0.6857142857
+23,8,Openness,0,0,0.92682646,0.07317354,dur_Comics,freq_Entertainment,freq_Communication,freq_Books...Reference,freq_Media...Video,freq_Communication,dur_Comics,0.6857142857
+24,90,Openness,0,0,0.58600677,0.41399323,dur_Comics,freq_Social,freq_Communication,freq_Sports,freq_Medical,freq_Social,dur_Comics,0.6857142857
+25,67,Openness,1,1,0.03231708,0.96768292,dur_Comics,freq_Entertainment,freq_Communication,freq_Social,freq_Books...Reference,freq_Communication,dur_Comics,0.6857142857
+26,77,Openness,1,0,0.99882098,0.00117902,dur_Comics,freq_Communication,freq_Sports,freq_calls,dur_Sports,freq_calls,dur_Comics,0.6857142857
+27,114,Openness,0,0,0.79304218,0.20695782,dur_Comics,freq_Social,freq_Books...Reference,freq_Productivity,freq_Media...Video,freq_Social,dur_Comics,0.6857142857
+28,14,Openness,1,1,0.20663965,0.79336035,dur_Comics,freq_Communication,freq_Travel...Local,freq_Sports,dur_Sports,freq_Education,dur_Comics,0.6857142857
+29,54,Openness,1,0,0.62595154,0.37404846,dur_Comics,freq_Books...Reference,freq_Sports,freq_News...Magazines,freq_Education,freq_News...Magazines,dur_Comics,0.6857142857
+30,13,Openness,0,0,0.6673095,0.3326905,dur_Comics,freq_calls,dur_Games,freq_Travel...Local,freq_Communication,dur_Games,dur_Comics,0.6857142857
+31,103,Openness,0,0,0.99998415,1.58E-05,dur_Comics,freq_Travel...Local,freq_Communication,freq_Social,freq_Media...Video,freq_Travel...Local,dur_Comics,0.6857142857
+32,43,Openness,1,1,0.00026801,0.99973199,dur_Comics,freq_Entertainment,freq_Books...Reference,freq_Sports,freq_Medical,freq_Medical,dur_Comics,0.6857142857
+33,7,Openness,1,0,0.89529529,0.10470471,freq_Travel...Local,freq_Entertainment,dur_Comics,freq_Communication,freq_Social,freq_Travel...Local,freq_Entertainment,0.6857142857
+34,108,Openness,0,0,0.99271278,0.00728722,dur_Comics,freq_Media...Video,freq_Sports,freq_News...Magazines,freq_Medical,freq_Media...Video,dur_Comics,0.6857142857
+0,82,Emotional Stability,0,0,0.73544444,0.26455556,freq_Games,dur_Books...Reference,dur_Health...Fitness,dur_Comics,freq_Shopping,dur_Books...Reference,freq_Games,0.4857142857
+1,120,Emotional Stability,0,1,0.00878639,0.99121361,freq_Games,dur_Comics,dur_Books...Reference,freq_Medical,freq_calls,dur_Comics,freq_Games,0.4857142857
+2,52,Emotional Stability,0,0,0.83151844,0.16848156,freq_Games,dur_Comics,dur_Health...Fitness,freq_Shopping,freq_Travel...Local,dur_Health...Fitness,freq_Games,0.4857142857
+3,16,Emotional Stability,1,1,0.45746382,0.54253618,dur_Comics,dur_Health...Fitness,freq_Games,freq_Medical,freq_Productivity,dur_Comics,dur_Health...Fitness,0.4857142857
+4,72,Emotional Stability,1,0,0.99956668,0.00043332,dur_Comics,dur_Health...Fitness,freq_Games,freq_Medical,dur_Books...Reference,dur_Comics,dur_Books...Reference,0.4857142857
+5,109,Emotional Stability,1,0,0.98937206,0.01062794,dur_Health...Fitness,dur_Comics,freq_Games,freq_Medical,dur_Books...Reference,dur_Comics,dur_Health...Fitness,0.4857142857
+6,17,Emotional Stability,1,1,9.78E-06,0.99999022,dur_Health...Fitness,dur_Books...Reference,dur_Comics,freq_Medical,dur_Games,dur_Books...Reference,dur_Health...Fitness,0.4857142857
+7,118,Emotional Stability,1,0,0.99999978,2.21E-07,dur_Comics,dur_Books...Reference,freq_Games,dur_Health...Fitness,dur_News...Magazines,dur_Comics,dur_Travel...Local,0.4857142857
+8,105,Emotional Stability,1,0,0.84681993,0.15318007,freq_Games,dur_Games,dur_Comics,dur_Health...Fitness,freq_calls,dur_Games,freq_Games,0.4857142857
+9,75,Emotional Stability,0,1,0.03188021,0.96811979,freq_Games,dur_Health...Fitness,dur_Comics,freq_Medical,dur_News...Magazines,dur_Comics,freq_Games,0.4857142857
+10,73,Emotional Stability,0,1,0.30838463,0.69161537,dur_Comics,dur_Health...Fitness,freq_Games,dur_News...Magazines,freq_calls,dur_Comics,freq_calls,0.4857142857
+11,44,Emotional Stability,0,0,0.92506677,0.07493323,dur_Books...Reference,dur_Health...Fitness,freq_Medical,dur_Business,dur_Comics,dur_Books...Reference,dur_Travel...Local,0.4857142857
+12,64,Emotional Stability,0,0,0.99943335,0.00056665,freq_Games,dur_Books...Reference,dur_Comics,dur_Health...Fitness,dur_News...Magazines,dur_Books...Reference,freq_Games,0.4857142857
+13,26,Emotional Stability,1,1,0.39443303,0.60556697,freq_Games,dur_Health...Fitness,dur_Comics,freq_Medical,dur_News...Magazines,freq_Games,dur_Games,0.4857142857
+14,122,Emotional Stability,1,0,0.89571343,0.10428657,dur_Comics,freq_Games,dur_Health...Fitness,freq_calls,freq_Medical,dur_Comics,freq_calls,0.4857142857
+15,61,Emotional Stability,1,0,0.64756049,0.35243951,dur_Books...Reference,dur_Comics,dur_Health...Fitness,dur_Games,freq_Productivity,dur_Books...Reference,dur_Comics,0.4857142857
+16,124,Emotional Stability,0,0,0.99531393,0.00468607,dur_Comics,dur_Health...Fitness,dur_Games,freq_Games,dur_News...Magazines,dur_Comics,dur_Personalization,0.4857142857
+17,97,Emotional Stability,1,0,0.83159264,0.16840736,dur_Comics,freq_Games,dur_Health...Fitness,freq_Transportation,dur_News...Magazines,dur_Comics,freq_Transportation,0.4857142857
+18,2,Emotional Stability,0,1,0.01128852,0.98871148,freq_Games,dur_Comics,dur_News...Magazines,dur_Health...Fitness,dur_Social,dur_Comics,freq_Games,0.4857142857
+19,48,Emotional Stability,0,1,0.0131512,0.9868488,freq_Games,dur_Comics,dur_Games,dur_Health...Fitness,dur_Social,dur_Comics,freq_Games,0.4857142857
+20,78,Emotional Stability,0,0,0.58011841,0.41988159,dur_News...Magazines,dur_Comics,dur_Health...Fitness,freq_Travel...Local,freq_Games,dur_Comics,dur_News...Magazines,0.4857142857
+21,51,Emotional Stability,1,1,0.01461872,0.98538128,freq_Games,dur_Comics,dur_Health...Fitness,dur_News...Magazines,freq_Medical,dur_Comics,freq_Games,0.4857142857
+22,20,Emotional Stability,1,1,0.17041625,0.82958375,dur_News...Magazines,dur_Comics,dur_Health...Fitness,dur_Social,freq_Productivity,dur_Comics,dur_News...Magazines,0.4857142857
+23,8,Emotional Stability,0,0,0.95462387,0.04537613,dur_Comics,freq_Games,dur_Health...Fitness,freq_Medical,freq_Browser,dur_Comics,freq_Browser,0.4857142857
+24,90,Emotional Stability,0,0,0.99562453,0.00437547,dur_Health...Fitness,dur_Comics,dur_News...Magazines,freq_Medical,dur_Books...Reference,dur_Comics,dur_Health...Fitness,0.4857142857
+25,67,Emotional Stability,1,0,0.99976942,0.00023058,dur_Books...Reference,dur_Comics,freq_Games,freq_Medical,freq_Media...Video,dur_Books...Reference,dur_Lifestyle,0.4857142857
+26,77,Emotional Stability,0,0,0.94897037,0.05102963,dur_Comics,freq_Games,dur_Health...Fitness,freq_Transportation,freq_Medical,dur_Comics,freq_Transportation,0.4857142857
+27,114,Emotional Stability,0,1,0.3584206,0.6415794,freq_Games,dur_News...Magazines,dur_Comics,dur_Books...Reference,freq_Shopping,dur_Comics,freq_Games,0.4857142857
+28,14,Emotional Stability,1,0,0.84775335,0.15224665,dur_Comics,dur_Health...Fitness,freq_Games,freq_Medical,dur_Books...Reference,dur_Comics,dur_Books...Reference,0.4857142857
+29,54,Emotional Stability,1,0,0.9481649,0.0518351,dur_News...Magazines,dur_Comics,dur_Health...Fitness,freq_Medical,dur_Finance,dur_Comics,dur_News...Magazines,0.4857142857
+30,13,Emotional Stability,1,0,0.73688812,0.26311188,dur_Health...Fitness,dur_Games,dur_Comics,freq_Games,freq_Medical,dur_Health...Fitness,freq_calls,0.4857142857
+31,103,Emotional Stability,0,0,0.99224804,0.00775196,dur_Comics,freq_Travel...Local,dur_Health...Fitness,freq_Games,freq_Medical,dur_Comics,dur_Books...Reference,0.4857142857
+32,43,Emotional Stability,1,1,0.06325139,0.93674861,dur_News...Magazines,dur_Comics,dur_Social,freq_Medical,dur_Finance,dur_Comics,dur_News...Magazines,0.4857142857
+33,7,Emotional Stability,0,0,0.98554423,0.01445577,dur_Comics,freq_Travel...Local,freq_calls,freq_Media...Video,freq_Browser,dur_Comics,freq_calls,0.4857142857
+34,108,Emotional Stability,0,1,0.16077792,0.83922208,dur_Health...Fitness,dur_Comics,freq_Shopping,freq_Media...Video,freq_Medical,dur_Comics,dur_Health...Fitness,0.4857142857

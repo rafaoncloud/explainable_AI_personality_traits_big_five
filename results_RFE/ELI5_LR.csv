@@ -1,0 +1,26 @@
+,target,feature,weight,trait
+0,High,Dur. Health/Fitness,0.012959656491432759,Emotional Stability
+1,High,Dur. Comics,0.01225920319280784,Emotional Stability
+2,High,Dur. Weather,0.010146681347164897,Emotional Stability
+3,High,Dur. Finance,0.010046460269967356,Emotional Stability
+4,High,Dur. News/Magazines,0.008928224099047626,Emotional Stability
+0,High,Dur. Productivity,0.018018355209276235,Extraversion
+1,High,Freq. Medical,0.017067929966354783,Extraversion
+2,High,Dur. Shopping,0.014752519542571944,Extraversion
+3,High,Freq. Education,0.01031067411489221,Extraversion
+4,High,Dur. Health/Fitness,0.009420280878642988,Extraversion
+0,High,<BIAS>,1.0691312779104898,Openness
+1,High,Dur. Productivity,0.02054874220407435,Openness
+2,High,Dur. Medical,0.00804308214615768,Openness
+3,High,Freq. Entertainment,0.007810385992469184,Openness
+4,High,Freq. Books/Reference,0.007505698886681813,Openness
+0,High,<BIAS>,1.8758032902263813,Conscientiousness
+1,High,Dur. Education,0.02122043103910329,Conscientiousness
+2,High,Dur. Browser,0.018222539257382674,Conscientiousness
+3,High,Dur. Personalization,0.016775901935358585,Conscientiousness
+4,High,Freq. Personality,0.014035912095487943,Conscientiousness
+0,High,Dur. Communication,0.025357791783574977,Agreeableness
+1,High,Age,0.022263407739975063,Agreeableness
+2,High,Dur. Lifestyle,0.019991186465730545,Agreeableness
+3,High,Freq. Medical,0.016477330927633215,Agreeableness
+4,High,Dur. Education,0.014854308065347788,Agreeableness

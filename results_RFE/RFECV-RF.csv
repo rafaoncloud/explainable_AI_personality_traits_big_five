@@ -1,0 +1,95 @@
+,Trait,Features,Support,Ranking
+5,Emotional Stability,Freq. Tools,True,1
+9,Emotional Stability,Freq. Productivity,True,1
+13,Emotional Stability,Freq. Photography,True,1
+23,Emotional Stability,Freq. Transportation,True,1
+26,Emotional Stability,Freq. Browser,True,1
+39,Emotional Stability,Dur. Unknown,True,1
+44,Emotional Stability,Dur. Travel/Local,True,1
+48,Emotional Stability,Dur. Business,True,1
+53,Emotional Stability,Dur. Browser,True,1
+4,Extraversion,Freq. Calls,True,1
+5,Extraversion,Freq. Tools,True,1
+8,Extraversion,Freq. Entertainment,True,1
+11,Extraversion,Freq. News/Magazines,True,1
+15,Extraversion,Freq. Communication,True,1
+18,Extraversion,Freq. Music/Audio,True,1
+23,Extraversion,Freq. Transportation,True,1
+26,Extraversion,Freq. Browser,True,1
+31,Extraversion,Dur. Calls,True,1
+32,Extraversion,Dur. Tools,True,1
+36,Extraversion,Dur. Productivity,True,1
+40,Extraversion,Dur. Photography,True,1
+42,Extraversion,Dur. Communication,True,1
+44,Extraversion,Dur. Travel/Local,True,1
+45,Extraversion,Dur. Music/Audio,True,1
+5,Openness,Freq. Tools,True,1
+8,Openness,Freq. Entertainment,True,1
+11,Openness,Freq. News/Magazines,True,1
+13,Openness,Freq. Photography,True,1
+17,Openness,Freq. Travel/Local,True,1
+18,Openness,Freq. Music/Audio,True,1
+29,Openness,Freq. Social,True,1
+32,Openness,Dur. Tools,True,1
+34,Openness,Dur. Games,True,1
+36,Openness,Dur. Productivity,True,1
+40,Openness,Dur. Photography,True,1
+42,Openness,Dur. Communication,True,1
+45,Openness,Dur. Music/Audio,True,1
+4,Conscientiousness,Freq. Calls,True,1
+5,Conscientiousness,Freq. Tools,True,1
+7,Conscientiousness,Freq. Games,True,1
+8,Conscientiousness,Freq. Entertainment,True,1
+9,Conscientiousness,Freq. Productivity,True,1
+17,Conscientiousness,Freq. Travel/Local,True,1
+31,Conscientiousness,Dur. Calls,True,1
+35,Conscientiousness,Dur. Entertainment,True,1
+39,Conscientiousness,Dur. Unknown,True,1
+44,Conscientiousness,Dur. Travel/Local,True,1
+1,Agreeableness,Age,True,1
+3,Agreeableness,Fluid IQ,True,1
+4,Agreeableness,Freq. Calls,True,1
+5,Agreeableness,Freq. Tools,True,1
+6,Agreeableness,Freq. Finance,True,1
+7,Agreeableness,Freq. Games,True,1
+8,Agreeableness,Freq. Entertainment,True,1
+9,Agreeableness,Freq. Productivity,True,1
+11,Agreeableness,Freq. News/Magazines,True,1
+12,Agreeableness,Freq. Unknown,True,1
+13,Agreeableness,Freq. Photography,True,1
+14,Agreeableness,Freq. Shopping,True,1
+15,Agreeableness,Freq. Communication,True,1
+16,Agreeableness,Freq. Books/Reference,True,1
+17,Agreeableness,Freq. Travel/Local,True,1
+18,Agreeableness,Freq. Music/Audio,True,1
+20,Agreeableness,Freq. Education,True,1
+21,Agreeableness,Freq. Business,True,1
+22,Agreeableness,Freq. Lifestyle,True,1
+23,Agreeableness,Freq. Transportation,True,1
+24,Agreeableness,Freq. Weather,True,1
+26,Agreeableness,Freq. Browser,True,1
+28,Agreeableness,Freq. Media/Video,True,1
+29,Agreeableness,Freq. Social,True,1
+31,Agreeableness,Dur. Calls,True,1
+32,Agreeableness,Dur. Tools,True,1
+33,Agreeableness,Dur. Finance,True,1
+34,Agreeableness,Dur. Games,True,1
+35,Agreeableness,Dur. Entertainment,True,1
+36,Agreeableness,Dur. Productivity,True,1
+38,Agreeableness,Dur. News/Magazines,True,1
+39,Agreeableness,Dur. Unknown,True,1
+40,Agreeableness,Dur. Photography,True,1
+41,Agreeableness,Dur. Shopping,True,1
+42,Agreeableness,Dur. Communication,True,1
+43,Agreeableness,Dur. Books/Reference,True,1
+44,Agreeableness,Dur. Travel/Local,True,1
+45,Agreeableness,Dur. Music/Audio,True,1
+47,Agreeableness,Dur. Education,True,1
+48,Agreeableness,Dur. Business,True,1
+49,Agreeableness,Dur. Lifestyle,True,1
+50,Agreeableness,Dur. Transportation,True,1
+51,Agreeableness,Dur. Weather,True,1
+52,Agreeableness,Dur. Sports,True,1
+53,Agreeableness,Dur. Browser,True,1
+55,Agreeableness,Dur. Media/Video,True,1
+56,Agreeableness,Dur. Social,True,1

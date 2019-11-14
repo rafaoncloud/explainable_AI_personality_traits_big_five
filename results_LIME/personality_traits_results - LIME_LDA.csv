@@ -1,0 +1,176 @@
+index,instance,trait,trait_real,trait_predicted,low_prob,high_prob,most_contribute,most_contribute_2,most_contribute_3,most_contribute_4,most_contribute_5,most_contribute_to_low,most_contribute_to_high,accuracy
+0,82,Extraversion,1,0,0.99946229,0.00053771,dur_Personalization,Gender,freq_Medical,freq_calls,freq_Comics,Gender,dur_Personalization,0.6
+1,120,Extraversion,0,1,0.16775121,0.83224879,freq_calls,freq_Unknown,freq_Comics,dur_Personalization,Gender,freq_Business,freq_calls,0.6
+2,52,Extraversion,0,1,1.36E-11,1,freq_Unknown,dur_Personalization,Gender,freq_Travel...Local,freq_calls,dur_Personalization,freq_Unknown,0.6
+3,16,Extraversion,1,1,0.25389491,7.46E-01,dur_Personalization,Gender,freq_Medical,freq_Books...Reference,freq_Comics,freq_Medical,dur_Personalization,0.6
+4,72,Extraversion,1,1,0.02246899,0.97753101,dur_Personalization,Gender,dur_Comics,freq_Comics,freq_calls,dur_Comics,dur_Personalization,0.6
+5,109,Extraversion,0,1,0.00273104,0.99726896,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_Sports,Gender,dur_Personalization,0.6
+6,17,Extraversion,1,1,0.40003202,0.59996798,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_calls,freq_Medical,dur_Personalization,0.6
+7,118,Extraversion,1,0,0.9999984,1.60E-06,dur_Personalization,freq_Comics,Gender,freq_Medical,freq_Sports,freq_Medical,dur_Personalization,0.6
+8,105,Extraversion,1,0,0.99999999,7.68E-09,freq_calls,freq_Unknown,dur_Personalization,Gender,freq_Medical,dur_Personalization,freq_calls,0.6
+9,75,Extraversion,0,1,0.48005933,5.20E-01,dur_Personalization,freq_Comics,Gender,freq_Medical,freq_Sports,freq_Medical,dur_Personalization,0.6
+10,73,Extraversion,0,1,0.01231267,0.98768733,freq_calls,dur_Personalization,freq_Comics,Gender,freq_Medical,Gender,freq_calls,0.6
+11,44,Extraversion,0,0,0.69152165,0.30847835,dur_Personalization,Gender,freq_Comics,dur_Comics,freq_Medical,dur_Comics,dur_Personalization,0.6
+12,64,Extraversion,0,0,0.9976698,0.0023302,dur_Personalization,Gender,freq_Comics,freq_calls,freq_Medical,freq_calls,dur_Personalization,0.6
+13,26,Extraversion,1,1,0.01321052,0.98678948,dur_Personalization,Gender,freq_Comics,freq_Medical,dur_Comics,freq_Medical,dur_Personalization,0.6
+14,122,Extraversion,1,1,1.34E-06,0.99999866,freq_calls,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_Medical,freq_calls,0.6
+15,61,Extraversion,0,0,0.98952258,1.05E-02,dur_Personalization,Gender,freq_Medical,freq_Comics,freq_Books...Reference,Gender,dur_Personalization,0.6
+16,124,Extraversion,0,0,0.91482696,0.08517304,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_Sports,freq_Medical,dur_Personalization,0.6
+17,97,Extraversion,1,1,0.01051617,0.98948383,freq_Unknown,dur_Personalization,Gender,freq_Medical,freq_Comics,Gender,freq_Unknown,0.6
+18,2,Extraversion,0,1,0.00073137,0.99926863,dur_Personalization,freq_Comics,Gender,dur_News...Magazines,freq_Medical,freq_Medical,dur_Personalization,0.6
+19,48,Extraversion,1,1,8.17E-08,1.00E+00,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_calls,freq_Medical,dur_Personalization,0.6
+20,78,Extraversion,0,1,3.48E-01,0.65248544,dur_Personalization,freq_Travel...Local,Gender,freq_Medical,dur_News...Magazines,freq_Travel...Local,dur_Personalization,0.6
+21,51,Extraversion,0,0,0.99999852,1.48E-06,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_Business,dur_Personalization,freq_Comics,0.6
+22,20,Extraversion,0,1,0.03150271,0.96849729,dur_Personalization,Gender,freq_Comics,freq_Medical,freq_Sports,Gender,dur_Personalization,0.6
+23,8,Extraversion,0,0,0.99338017,0.00661983,freq_Unknown,dur_Personalization,Gender,freq_Medical,freq_Business,dur_Personalization,freq_Unknown,0.6
+24,90,Extraversion,0,0,0.95377253,0.04622747,dur_Personalization,freq_Unknown,Gender,freq_Medical,freq_calls,Gender,dur_Personalization,0.6
+25,67,Extraversion,1,1,2.43E-06,1.00E+00,dur_Personalization,freq_Unknown,Gender,freq_Medical,freq_calls,Gender,dur_Personalization,0.6
+26,77,Extraversion,1,1,0.0017877,0.9982123,dur_Personalization,Gender,freq_Medical,freq_Comics,freq_calls,freq_Medical,dur_Personalization,0.6
+27,114,Extraversion,0,0,0.90669597,0.09330403,dur_Personalization,freq_Unknown,freq_Comics,freq_Medical,Gender,Gender,dur_Personalization,0.6
+28,14,Extraversion,0,1,0.01491926,0.98508074,dur_Personalization,Gender,freq_Medical,freq_Comics,freq_Sports,freq_Medical,dur_Personalization,0.6
+29,54,Extraversion,1,1,0.07405178,0.92594822,dur_Personalization,Gender,freq_Comics,freq_Medical,dur_News...Magazines,Gender,dur_Personalization,0.6
+30,13,Extraversion,0,0,0.8755562,0.1244438,freq_calls,dur_Personalization,Gender,freq_Medical,freq_Comics,freq_Medical,freq_calls,0.6
+31,103,Extraversion,1,0,0.99946698,0.00053302,dur_Personalization,Gender,freq_Travel...Local,freq_Comics,freq_Medical,freq_Travel...Local,dur_Personalization,0.6
+32,43,Extraversion,1,1,0.25164869,0.74835131,dur_Personalization,freq_Unknown,freq_Comics,Gender,freq_Business,freq_Business,dur_Personalization,0.6
+33,7,Extraversion,1,0,0.73713316,2.63E-01,freq_calls,dur_Personalization,Gender,freq_Travel...Local,freq_Medical,freq_Travel...Local,freq_calls,0.6
+34,108,Extraversion,0,0,0.99879964,0.00120036,dur_Personalization,Gender,freq_Comics,freq_Business,freq_Medical,Gender,dur_Personalization,0.6
+0,82,Agreeableness,1,0,0.71645447,0.28354553,freq_Medical,Gender,freq_Communication,freq_calls,freq_Productivity,freq_Medical,freq_Productivity,0.6
+1,120,Agreeableness,0,0,0.97144876,0.02855124,freq_Medical,Gender,freq_calls,freq_Communication,dur_Lifestyle,freq_Communication,freq_Medical,0.6
+2,52,Agreeableness,0,1,0.40352994,5.96E-01,freq_Medical,Gender,freq_Travel...Local,freq_Media...Video,freq_calls,freq_Medical,freq_Productivity,0.6
+3,16,Agreeableness,0,0,0.50373532,4.96E-01,freq_Medical,Gender,freq_Productivity,freq_Personalization,freq_Communication,freq_Medical,Gender,0.6
+4,72,Agreeableness,1,1,3.19E-07,0.99999968,freq_Medical,Gender,Age,freq_calls,freq_Communication,freq_Medical,Gender,0.6
+5,109,Agreeableness,1,0,0.91698101,0.08301899,freq_Medical,Gender,freq_Travel...Local,freq_Personalization,freq_Media...Video,freq_Medical,freq_Travel...Local,0.6
+6,17,Agreeableness,1,0,0.98369552,0.01630448,freq_Medical,Gender,freq_Travel...Local,freq_calls,freq_Media...Video,freq_Medical,Gender,0.6
+7,118,Agreeableness,0,1,1.44E-05,0.99998555,freq_Medical,Gender,Age,freq_Personalization,dur_Communication,freq_Medical,Gender,0.6
+8,105,Agreeableness,1,1,0.00020761,0.99979239,freq_Medical,freq_calls,Gender,freq_Media...Video,freq_Communication,freq_Medical,freq_calls,0.6
+9,75,Agreeableness,1,1,0.10461726,8.95E-01,freq_Medical,Gender,freq_calls,freq_Travel...Local,freq_Personalization,freq_Medical,Gender,0.6
+10,73,Agreeableness,0,1,0.00099794,0.99900206,freq_Medical,freq_calls,Gender,Age,freq_Travel...Local,freq_Medical,freq_calls,0.6
+11,44,Agreeableness,0,1,1.13E-05,0.99998869,Gender,freq_Medical,freq_calls,dur_Communication,freq_Personalization,freq_Medical,Gender,0.6
+12,64,Agreeableness,0,0,0.99983505,0.00016495,Gender,freq_Medical,freq_Media...Video,freq_calls,freq_Comics,freq_Medical,Gender,0.6
+13,26,Agreeableness,1,1,0.00080458,0.99919542,freq_Medical,Gender,Age,freq_Travel...Local,freq_Personalization,freq_Medical,Gender,0.6
+14,122,Agreeableness,1,1,1.20E-09,1,freq_Medical,freq_calls,Gender,Age,freq_Travel...Local,freq_Medical,freq_calls,0.6
+15,61,Agreeableness,1,0,0.53305018,4.67E-01,freq_Medical,Gender,freq_Media...Video,Age,freq_Productivity,freq_Medical,Age,0.6
+16,124,Agreeableness,0,1,0.19155627,0.80844373,freq_Medical,Gender,freq_Comics,dur_Medical,freq_Personalization,freq_Medical,Gender,0.6
+17,97,Agreeableness,0,1,0.00270768,0.99729232,freq_Medical,Gender,freq_calls,freq_Travel...Local,freq_Transportation,freq_Medical,freq_Travel...Local,0.6
+18,2,Agreeableness,1,1,0.03439064,0.96560936,Gender,freq_Medical,freq_Personalization,freq_Travel...Local,freq_Media...Video,freq_Medical,Gender,0.6
+19,48,Agreeableness,1,1,0.00E+00,1,freq_Medical,Gender,freq_calls,freq_Travel...Local,freq_Personalization,freq_Medical,Gender,0.6
+20,78,Agreeableness,0,0,0.99998249,1.75E-05,freq_Medical,Gender,freq_Travel...Local,freq_Communication,freq_Personalization,freq_Medical,Gender,0.6
+21,51,Agreeableness,1,1,0.04001515,9.60E-01,Gender,freq_Medical,Age,freq_Media...Video,dur_Medical,Gender,Age,0.6
+22,20,Agreeableness,0,0,0.93062267,0.06937733,Gender,freq_Medical,freq_Productivity,freq_Travel...Local,freq_Personalization,Gender,freq_Productivity,0.6
+23,8,Agreeableness,1,0,0.99510935,0.00489065,freq_Medical,Gender,freq_Media...Video,freq_Communication,freq_Comics,freq_Medical,Gender,0.6
+24,90,Agreeableness,1,1,0.27204891,0.72795109,freq_Medical,Gender,freq_calls,freq_Communication,freq_Personalization,freq_Medical,freq_Communication,0.6
+25,67,Agreeableness,0,0,1.00E+00,2.95E-14,freq_Medical,Gender,freq_Media...Video,freq_Communication,freq_calls,freq_Medical,dur_Lifestyle,0.6
+26,77,Agreeableness,1,1,0.36395537,0.63604463,freq_Medical,Gender,freq_calls,freq_Transportation,freq_Communication,freq_Medical,Gender,0.6
+27,114,Agreeableness,0,0,0.98267757,0.01732243,freq_Medical,Gender,freq_Media...Video,freq_calls,freq_Productivity,Gender,freq_Medical,0.6
+28,14,Agreeableness,0,1,0.02625591,0.97374409,freq_Medical,Gender,freq_Travel...Local,freq_Personalization,freq_Comics,freq_Medical,Gender,0.6
+29,54,Agreeableness,1,1,0.08394344,0.91605656,freq_Medical,Gender,dur_Lifestyle,freq_Personalization,dur_Medical,freq_Medical,dur_Lifestyle,0.6
+30,13,Agreeableness,1,1,0.05852466,0.94147534,Gender,freq_calls,freq_Medical,freq_Comics,freq_Media...Video,freq_Medical,Gender,0.6
+31,103,Agreeableness,1,0,0.99999639,3.61E-06,freq_Medical,Gender,freq_Travel...Local,freq_Media...Video,freq_Communication,freq_Medical,Gender,0.6
+32,43,Agreeableness,1,0,0.94839538,0.05160462,freq_Medical,Gender,freq_Media...Video,freq_Tools,freq_Personalization,freq_Medical,Gender,0.6
+33,7,Agreeableness,0,0,0.99990665,9.34E-05,freq_Medical,freq_calls,Gender,freq_Media...Video,freq_Travel...Local,freq_Media...Video,freq_Medical,0.6
+34,108,Agreeableness,0,0,0.99993658,6.34E-05,freq_Medical,Gender,freq_Media...Video,freq_Personalization,freq_Comics,freq_Medical,dur_Medical,0.6
+0,82,Conscientiousness,1,1,7.27E-05,0.99992728,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+1,120,Conscientiousness,0,1,8.66E-14,1,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+2,52,Conscientiousness,0,1,0,1,freq_Comics,dur_Comics,freq_Finance,freq_Medical,dur_Medical,freq_Comics,dur_Comics,0.3428571429
+3,16,Conscientiousness,1,1,0.00457182,0.99542818,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+4,72,Conscientiousness,1,0,0.76982049,0.23017951,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+5,109,Conscientiousness,1,1,3.28E-06,0.99999672,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+6,17,Conscientiousness,1,0,0.76328057,0.23671943,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+7,118,Conscientiousness,1,0,0.9955529,0.0044471,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+8,105,Conscientiousness,1,0,0.92907941,0.07092059,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+9,75,Conscientiousness,1,1,0.46424165,0.53575835,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+10,73,Conscientiousness,0,1,0.28685423,0.71314577,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+11,44,Conscientiousness,0,1,1.59E-04,0.99984131,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+12,64,Conscientiousness,1,0,0.8865268,0.1134732,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+13,26,Conscientiousness,0,1,0.01716489,0.98283511,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+14,122,Conscientiousness,1,0,0.58371485,0.41628515,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+15,61,Conscientiousness,0,1,7.74E-07,0.99999923,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,freq_Comics,dur_Comics,0.3428571429
+16,124,Conscientiousness,0,0,0.51405338,0.48594662,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+17,97,Conscientiousness,1,1,0.0013292,0.9986708,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+18,2,Conscientiousness,0,1,0.0325453,0.9674547,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+19,48,Conscientiousness,0,0,1,9.65E-11,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+20,78,Conscientiousness,0,1,0.43512749,0.56487251,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+21,51,Conscientiousness,0,1,0.00517266,0.99482734,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+22,20,Conscientiousness,1,1,0.00151525,0.99848475,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+23,8,Conscientiousness,0,1,1.83E-05,0.99998171,freq_Comics,dur_Comics,freq_Finance,freq_Medical,dur_Medical,dur_Comics,freq_Comics,0.3428571429
+24,90,Conscientiousness,1,0,0.99322967,0.00677033,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+25,67,Conscientiousness,0,1,5.80E-05,1.00E+00,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+26,77,Conscientiousness,1,1,6.07E-05,0.99993929,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+27,114,Conscientiousness,0,1,3.67E-10,1.00E+00,freq_Comics,dur_Comics,dur_Medical,freq_Medical,dur_Travel...Local,dur_Comics,freq_Comics,0.3428571429
+28,14,Conscientiousness,0,0,0.98644379,0.01355621,freq_Comics,dur_Comics,freq_Finance,freq_Medical,dur_Medical,dur_Comics,freq_Comics,0.3428571429
+29,54,Conscientiousness,0,0,0.98512038,0.01487962,freq_Comics,dur_Comics,freq_Finance,freq_Medical,dur_Medical,dur_Comics,freq_Comics,0.3428571429
+30,13,Conscientiousness,1,0,0.82441233,0.17558767,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+31,103,Conscientiousness,0,0,0.5183751,0.4816249,freq_Comics,dur_Comics,dur_Medical,freq_Finance,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+32,43,Conscientiousness,0,1,0.00060808,0.99939192,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+33,7,Conscientiousness,1,0,0.96335216,0.03664784,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+34,108,Conscientiousness,1,0,0.64475206,0.35524794,freq_Comics,dur_Comics,freq_Finance,dur_Medical,freq_Medical,dur_Comics,freq_Comics,0.3428571429
+0,82,Openness,1,1,0.00851595,0.99148405,freq_Comics,Gender,dur_Comics,freq_Books...Reference,dur_Shopping,Gender,freq_Comics,0.5428571429
+1,120,Openness,0,1,0.19191806,0.80808194,freq_Comics,freq_calls,dur_Comics,Gender,dur_Lifestyle,dur_Comics,freq_Comics,0.5428571429
+2,52,Openness,0,1,0.34530686,6.55E-01,freq_Comics,freq_Travel...Local,dur_Comics,Gender,freq_Books...Reference,freq_Comics,dur_Comics,0.5428571429
+3,16,Openness,1,1,0.0044506,0.9955494,freq_Comics,dur_Comics,Gender,freq_Books...Reference,fluidIQ,dur_Comics,freq_Comics,0.5428571429
+4,72,Openness,1,0,0.99999983,1.75E-07,freq_Comics,dur_Comics,Gender,dur_Personalization,dur_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+5,109,Openness,0,0,0.97930913,0.02069087,freq_Comics,dur_Comics,Gender,fluidIQ,freq_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+6,17,Openness,1,1,0.07055371,0.92944629,freq_Comics,Gender,dur_Comics,freq_Travel...Local,dur_Games,dur_Comics,freq_Comics,0.5428571429
+7,118,Openness,1,1,0.00416265,0.99583735,freq_Comics,Gender,dur_Comics,fluidIQ,freq_Weather,dur_Comics,freq_Comics,0.5428571429
+8,105,Openness,1,0,1,9.83E-10,freq_Comics,freq_calls,dur_Comics,dur_Games,Gender,dur_Comics,freq_Comics,0.5428571429
+9,75,Openness,1,1,0.29162157,0.70837843,freq_Comics,dur_Comics,Gender,freq_Travel...Local,dur_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+10,73,Openness,0,1,0.02402367,0.97597633,freq_Comics,freq_calls,freq_Travel...Local,Gender,dur_Comics,Gender,freq_Comics,0.5428571429
+11,44,Openness,0,0,0.89464123,0.10535877,freq_Comics,dur_Comics,Gender,dur_Personalization,fluidIQ,dur_Comics,freq_Comics,0.5428571429
+12,64,Openness,0,1,0.0010349,0.9989651,freq_Comics,Gender,freq_Books...Reference,freq_Media...Video,dur_Personalization,freq_Media...Video,freq_Comics,0.5428571429
+13,26,Openness,1,1,0.00273069,0.99726931,freq_Comics,Gender,freq_Travel...Local,dur_Comics,dur_Personalization,dur_Comics,freq_Comics,0.5428571429
+14,122,Openness,1,1,0.04716369,0.95283631,freq_Comics,freq_calls,dur_Comics,Gender,freq_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+15,61,Openness,0,0,1,1.06E-09,freq_Comics,dur_Comics,dur_Games,Gender,freq_Travel...Local,freq_Comics,dur_Comics,0.5428571429
+16,124,Openness,1,0,0.99869953,0.00130047,freq_Comics,Gender,dur_Games,dur_Comics,dur_Personalization,dur_Games,freq_Comics,0.5428571429
+17,97,Openness,1,1,0.00590434,0.99409566,freq_Comics,dur_Comics,Gender,freq_Travel...Local,freq_Books...Reference,dur_Comics,freq_Comics,0.5428571429
+18,2,Openness,1,0,0.78945249,0.21054751,freq_Comics,dur_Comics,Gender,freq_Travel...Local,dur_Personalization,dur_Comics,freq_Comics,0.5428571429
+19,48,Openness,1,0,0.99959043,4.10E-04,freq_Comics,dur_Comics,dur_Games,Gender,fluidIQ,dur_Comics,freq_Comics,0.5428571429
+20,78,Openness,0,1,0.19149863,0.80850137,freq_Comics,freq_Travel...Local,dur_Comics,dur_News...Magazines,Gender,freq_Travel...Local,freq_Comics,0.5428571429
+21,51,Openness,0,0,0.99999234,7.66E-06,freq_Comics,Gender,fluidIQ,dur_Personalization,freq_Business,Gender,freq_Comics,0.5428571429
+22,20,Openness,0,1,0.00508728,0.99491272,freq_Comics,dur_Comics,Gender,freq_Travel...Local,freq_Weather,dur_Comics,freq_Comics,0.5428571429
+23,8,Openness,0,0,0.92741472,0.07258528,freq_Comics,dur_Comics,Gender,freq_Books...Reference,freq_Tools,dur_Comics,freq_Comics,0.5428571429
+24,90,Openness,0,0,0.82778133,0.17221867,freq_Comics,dur_Comics,Gender,dur_Personalization,freq_Business,dur_Comics,freq_Comics,0.5428571429
+25,67,Openness,1,1,1.28E-07,0.99999987,freq_Comics,dur_Comics,freq_Weather,Gender,freq_Tools,dur_Comics,freq_Comics,0.5428571429
+26,77,Openness,1,0,0.99985909,0.00014091,freq_Comics,Gender,dur_Comics,dur_Personalization,dur_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+27,114,Openness,0,1,3.31E-05,0.99996695,freq_Comics,dur_Comics,Gender,dur_News...Magazines,freq_Media...Video,dur_Comics,freq_Comics,0.5428571429
+28,14,Openness,1,1,0.0688803,0.9311197,freq_Comics,dur_Comics,dur_Personalization,freq_Travel...Local,Gender,dur_Comics,freq_Comics,0.5428571429
+29,54,Openness,1,0,0.94271241,0.05728759,freq_Comics,Gender,dur_Comics,dur_Personalization,dur_News...Magazines,Gender,freq_Comics,0.5428571429
+30,13,Openness,0,1,0.2637385,0.7362615,freq_Comics,freq_calls,Gender,dur_Comics,freq_Travel...Local,dur_Comics,freq_Comics,0.5428571429
+31,103,Openness,0,0,0.99999788,2.12E-06,freq_Comics,freq_Travel...Local,dur_Comics,Gender,freq_Weather,freq_Travel...Local,freq_Comics,0.5428571429
+32,43,Openness,1,1,0.00249089,0.99750911,freq_Comics,freq_Books...Reference,Gender,dur_News...Magazines,dur_Comics,dur_Comics,freq_Comics,0.5428571429
+33,7,Openness,1,0,0.93856582,0.06143418,freq_Comics,freq_Travel...Local,freq_calls,dur_Comics,Gender,freq_Travel...Local,freq_Comics,0.5428571429
+34,108,Openness,0,0,0.99583942,0.00416058,freq_Comics,dur_Comics,freq_Media...Video,Gender,freq_Business,dur_Comics,freq_Comics,0.5428571429
+0,82,Emotional Stability,0,1,0.00523531,0.99476469,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,freq_Games,freq_Comics,dur_Comics,0.6857142857
+1,120,Emotional Stability,0,0,0.94396213,0.05603787,freq_Comics,dur_Comics,dur_Personalization,freq_Medical,freq_Unknown,freq_Comics,dur_Comics,0.6857142857
+2,52,Emotional Stability,0,0,1,2.32E-21,freq_Comics,dur_Comics,freq_Travel...Local,freq_Medical,dur_Personalization,dur_Comics,freq_Comics,0.6857142857
+3,16,Emotional Stability,1,0,0.76067438,0.23932562,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Health...Fitness,freq_Comics,dur_Comics,0.6857142857
+4,72,Emotional Stability,1,1,0.4083768,0.5916232,freq_Comics,dur_Comics,dur_Personalization,Age,dur_Travel...Local,freq_Comics,dur_Comics,0.6857142857
+5,109,Emotional Stability,1,0,0.99365157,0.00634843,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Health...Fitness,freq_Comics,dur_Comics,0.6857142857
+6,17,Emotional Stability,1,1,1.67E-05,0.9999833,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Travel...Local,freq_Comics,dur_Comics,0.6857142857
+7,118,Emotional Stability,1,0,0.99928815,7.12E-04,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Travel...Local,freq_Comics,dur_Comics,0.6857142857
+8,105,Emotional Stability,1,0,0.9984756,0.0015244,freq_Comics,dur_Comics,dur_Personalization,freq_Medical,freq_Games,freq_Comics,dur_Comics,0.6857142857
+9,75,Emotional Stability,0,1,0.0067026,0.9932974,freq_Comics,dur_Comics,freq_Medical,dur_Travel...Local,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+10,73,Emotional Stability,0,0,0.68250388,0.31749612,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,Age,freq_Comics,dur_Comics,0.6857142857
+11,44,Emotional Stability,0,0,0.83053207,0.16946793,freq_Comics,dur_Comics,dur_Personalization,dur_Travel...Local,freq_Medical,freq_Comics,dur_Comics,0.6857142857
+12,64,Emotional Stability,0,0,0.99974465,0.00025535,freq_Comics,dur_Comics,dur_Personalization,freq_Medical,freq_Games,freq_Comics,dur_Comics,0.6857142857
+13,26,Emotional Stability,1,1,0.33109379,0.66890621,freq_Comics,dur_Comics,dur_Personalization,freq_Medical,Age,freq_Comics,dur_Comics,0.6857142857
+14,122,Emotional Stability,1,0,0.75411613,0.24588387,freq_Comics,dur_Comics,Age,dur_Personalization,freq_Medical,freq_Comics,dur_Comics,0.6857142857
+15,61,Emotional Stability,1,1,0.0002278,0.9997722,freq_Comics,dur_Comics,dur_Personalization,dur_Travel...Local,Age,dur_Comics,freq_Comics,0.6857142857
+16,124,Emotional Stability,0,0,0.97318959,0.02681041,freq_Comics,dur_Comics,dur_Personalization,freq_Medical,dur_Games,freq_Comics,dur_Comics,0.6857142857
+17,97,Emotional Stability,1,1,0.39541912,0.60458088,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,freq_Transportation,freq_Comics,dur_Comics,0.6857142857
+18,2,Emotional Stability,0,1,0.00758071,0.99241929,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_News...Magazines,freq_Comics,dur_Comics,0.6857142857
+19,48,Emotional Stability,0,0,0.95195112,0.04804888,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,freq_Games,freq_Comics,dur_Comics,0.6857142857
+20,78,Emotional Stability,0,0,0.88329041,0.11670959,freq_Comics,dur_Comics,freq_Travel...Local,dur_News...Magazines,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+21,51,Emotional Stability,1,1,0.40033292,0.59966708,freq_Comics,dur_Comics,dur_Personalization,Education_lev,freq_Medical,freq_Comics,dur_Comics,0.6857142857
+22,20,Emotional Stability,1,1,0.0671993,0.9328007,freq_Comics,dur_Comics,freq_Medical,dur_News...Magazines,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+23,8,Emotional Stability,0,0,0.97022743,0.02977257,freq_Comics,dur_Comics,freq_Medical,freq_Unknown,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+24,90,Emotional Stability,0,0,0.99162919,0.00837081,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,freq_Unknown,freq_Comics,dur_Comics,0.6857142857
+25,67,Emotional Stability,1,0,0.99981929,0.00018071,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,freq_Unknown,freq_Comics,dur_Comics,0.6857142857
+26,77,Emotional Stability,0,0,0.93445468,0.06554532,freq_Comics,dur_Comics,dur_Personalization,dur_Travel...Local,freq_Medical,freq_Comics,dur_Comics,0.6857142857
+27,114,Emotional Stability,0,0,0.91736041,0.08263959,freq_Comics,dur_Comics,dur_News...Magazines,dur_Travel...Local,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+28,14,Emotional Stability,1,0,0.71187901,0.28812099,freq_Comics,dur_Comics,dur_Travel...Local,freq_Medical,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+29,54,Emotional Stability,1,1,0.35546312,0.64453688,freq_Comics,dur_Comics,dur_News...Magazines,freq_Medical,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+30,13,Emotional Stability,1,0,0.82576188,0.17423812,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Travel...Local,freq_Comics,dur_Comics,0.6857142857
+31,103,Emotional Stability,0,0,0.99916207,0.00083793,freq_Comics,dur_Comics,dur_Personalization,freq_Travel...Local,freq_Medical,freq_Comics,dur_Comics,0.6857142857
+32,43,Emotional Stability,1,1,0.06052541,0.93947459,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_News...Magazines,freq_Comics,dur_Comics,0.6857142857
+33,7,Emotional Stability,0,0,0.98505491,0.01494509,freq_Comics,dur_Comics,freq_Medical,freq_Travel...Local,dur_Personalization,freq_Comics,dur_Comics,0.6857142857
+34,108,Emotional Stability,0,0,0.74542394,0.25457606,freq_Comics,dur_Comics,freq_Medical,dur_Personalization,dur_Health...Fitness,freq_Comics,dur_Comics,0.6857142857

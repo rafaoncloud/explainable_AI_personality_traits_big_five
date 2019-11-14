@@ -1,0 +1,176 @@
+index,instance,trait,trait_real,trait_predicted,low_prob,high_prob,most_contribute,most_contribute_2,most_contribute_3,most_contribute_4,most_contribute_5,most_contribute_to_low,most_contribute_to_high,accuracy
+0,82,Extraversion,1,0,1,0,freq_Social,freq_Communication,freq_Browser,freq_Unknown,freq_Games,freq_Social,freq_Games,0.6285714286
+1,120,Extraversion,0,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Communication,freq_calls,freq_Browser,freq_Social,freq_Unknown,0.6285714286
+2,52,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Browser,freq_Tools,freq_Social,freq_Communication,freq_Unknown,0.6285714286
+3,16,Extraversion,1,0,1,0,freq_Communication,freq_Social,freq_Unknown,freq_calls,freq_Browser,freq_Communication,freq_Browser,0.6285714286
+4,72,Extraversion,1,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,dur_calls,freq_calls,freq_Social,freq_Communication,freq_Social,0.6285714286
+5,109,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Social,dur_calls,freq_Games,freq_Unknown,freq_Communication,0.6285714286
+6,17,Extraversion,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,freq_Unknown,Education_lev,dur_Comics,freq_Communication,freq_Social,0.6285714286
+7,118,Extraversion,1,0,1,0,freq_Communication,freq_Unknown,freq_Social,freq_calls,freq_Sports,freq_Communication,freq_Social,0.6285714286
+8,105,Extraversion,1,1,0.33333333,0.66666667,freq_Unknown,freq_Communication,freq_calls,freq_Social,freq_Games,freq_Communication,freq_Unknown,0.6285714286
+9,75,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Games,freq_calls,freq_Sports,freq_Communication,freq_Games,0.6285714286
+10,73,Extraversion,0,1,0,1,freq_Communication,freq_calls,freq_Unknown,freq_Social,freq_Photography,freq_Unknown,freq_Communication,0.6285714286
+11,44,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_calls,freq_Social,freq_Weather,freq_Communication,freq_Social,0.6285714286
+12,64,Extraversion,0,0,1,0,freq_Communication,freq_Unknown,freq_Social,dur_Comics,freq_Browser,freq_Communication,freq_Social,0.6285714286
+13,26,Extraversion,1,1,0,1,freq_Communication,freq_Unknown,dur_calls,freq_Social,dur_Comics,freq_Communication,freq_Social,0.6285714286
+14,122,Extraversion,1,1,0,1,freq_Communication,freq_calls,freq_Unknown,freq_Tools,freq_Social,freq_Communication,freq_calls,0.6285714286
+15,61,Extraversion,0,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_Tools,dur_calls,freq_Communication,freq_Social,0.6285714286
+16,124,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Social,dur_calls,freq_Comics,freq_Unknown,freq_Communication,0.6285714286
+17,97,Extraversion,1,1,0,1,freq_Unknown,freq_Communication,freq_Tools,freq_Social,freq_calls,freq_calls,freq_Unknown,0.6285714286
+18,2,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Social,freq_Games,freq_Tools,freq_Communication,freq_Social,0.6285714286
+19,48,Extraversion,1,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_Browser,freq_calls,freq_Communication,freq_Social,0.6285714286
+20,78,Extraversion,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Browser,freq_Social,dur_Comics,freq_Communication,freq_Social,0.6285714286
+21,51,Extraversion,0,0,1,0,freq_Communication,freq_Social,freq_Unknown,dur_calls,freq_Games,freq_Communication,freq_Games,0.6285714286
+22,20,Extraversion,0,0,1,0,freq_Communication,freq_Social,freq_Unknown,freq_Browser,freq_Tools,freq_Communication,freq_Browser,0.6285714286
+23,8,Extraversion,0,0,0.66666667,0.33333333,freq_Unknown,freq_Communication,freq_Browser,freq_Tools,freq_Social,freq_Communication,freq_Unknown,0.6285714286
+24,90,Extraversion,0,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_Browser,freq_calls,freq_Communication,freq_Unknown,0.6285714286
+25,67,Extraversion,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Communication,freq_Tools,freq_Browser,freq_Social,freq_Unknown,0.6285714286
+26,77,Extraversion,1,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,dur_Comics,freq_calls,freq_Communication,freq_Social,0.6285714286
+27,114,Extraversion,0,0,1,0,freq_Communication,freq_Unknown,freq_Social,freq_calls,freq_Games,freq_Communication,freq_Unknown,0.6285714286
+28,14,Extraversion,0,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_calls,dur_Comics,freq_Communication,freq_Social,0.6285714286
+29,54,Extraversion,1,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,dur_calls,dur_Comics,freq_Unknown,freq_Communication,0.6285714286
+30,13,Extraversion,0,1,0.33333333,0.66666667,freq_Communication,freq_calls,freq_Unknown,dur_Comics,freq_Social,freq_Communication,freq_calls,0.6285714286
+31,103,Extraversion,1,0,0.66666667,0.33333333,freq_Social,freq_Communication,freq_Unknown,freq_Browser,freq_Sports,freq_Social,freq_Browser,0.6285714286
+32,43,Extraversion,1,1,0.33333333,0.66666667,freq_Unknown,freq_Communication,freq_Tools,freq_calls,freq_Social,freq_Tools,freq_Unknown,0.6285714286
+33,7,Extraversion,1,0,0.66666667,0.33333333,freq_Social,freq_Communication,freq_calls,freq_Unknown,freq_Browser,freq_Social,freq_calls,0.6285714286
+34,108,Extraversion,0,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_Browser,freq_Games,freq_Unknown,freq_Communication,0.6285714286
+0,82,Agreeableness,1,1,0.33333333,0.66666667,freq_Social,freq_Unknown,freq_Browser,freq_Games,dur_Comics,dur_Comics,freq_Social,0.6571428571
+1,120,Agreeableness,0,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Browser,freq_Games,freq_calls,freq_Unknown,freq_Social,0.6571428571
+2,52,Agreeableness,0,0,0.66666667,0.33333333,freq_Unknown,freq_Browser,freq_Social,freq_Games,freq_Tools,freq_Unknown,freq_Browser,0.6571428571
+3,16,Agreeableness,0,0,0.66666667,0.33333333,freq_Social,freq_Unknown,freq_Games,freq_Browser,freq_Productivity,freq_Games,freq_Social,0.6571428571
+4,72,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,dur_Comics,freq_Browser,freq_Communication,freq_Social,freq_Unknown,0.6571428571
+5,109,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,freq_Communication,dur_Games,freq_Social,freq_Unknown,0.6571428571
+6,17,Agreeableness,1,0,0.66666667,0.33333333,freq_Unknown,freq_Social,dur_Games,freq_Communication,freq_Browser,freq_Social,freq_Unknown,0.6571428571
+7,118,Agreeableness,0,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Browser,freq_Tools,dur_Comics,freq_Social,freq_Unknown,0.6571428571
+8,105,Agreeableness,1,1,0,1,freq_Unknown,freq_Social,freq_Games,freq_calls,dur_Games,freq_Unknown,freq_Games,0.6571428571
+9,75,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Games,dur_Comics,freq_Browser,freq_Social,freq_Unknown,0.6571428571
+10,73,Agreeableness,0,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,freq_calls,freq_Communication,freq_Social,freq_Unknown,0.6571428571
+11,44,Agreeableness,0,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Browser,dur_Comics,freq_Tools,freq_Social,freq_Unknown,0.6571428571
+12,64,Agreeableness,0,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Games,dur_Comics,freq_Browser,freq_Social,freq_Unknown,0.6571428571
+13,26,Agreeableness,1,1,0,1,freq_Unknown,freq_Social,freq_Browser,dur_Games,freq_Games,freq_Social,freq_Unknown,0.6571428571
+14,122,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_calls,freq_Games,freq_Productivity,freq_Social,freq_Unknown,0.6571428571
+15,61,Agreeableness,1,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Tools,freq_Games,freq_Browser,freq_Social,freq_Unknown,0.6571428571
+16,124,Agreeableness,0,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,freq_Games,freq_Communication,freq_Social,freq_Unknown,0.6571428571
+17,97,Agreeableness,0,0,1,0,freq_Unknown,freq_Social,freq_Browser,dur_Games,freq_Music...Audio,freq_Unknown,freq_Music...Audio,0.6571428571
+18,2,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Games,freq_Browser,dur_Comics,freq_Social,freq_Unknown,0.6571428571
+19,48,Agreeableness,1,1,0,1,freq_Unknown,freq_Social,freq_Browser,freq_Games,dur_Comics,freq_Social,freq_Unknown,0.6571428571
+20,78,Agreeableness,0,0,0.66666667,0.33333333,freq_Browser,freq_Unknown,freq_Social,freq_Comics,freq_Lifestyle,freq_Social,freq_Browser,0.6571428571
+21,51,Agreeableness,1,0,0.66666667,0.33333333,freq_Social,freq_Unknown,freq_Games,Education_lev,freq_Browser,Education_lev,freq_Social,0.6571428571
+22,20,Agreeableness,0,0,0.66666667,0.33333333,freq_Social,freq_Unknown,freq_Productivity,freq_Tools,freq_Browser,freq_Productivity,freq_Social,0.6571428571
+23,8,Agreeableness,1,0,0.66666667,0.33333333,freq_Unknown,freq_Browser,freq_Social,freq_Tools,freq_Games,freq_Unknown,freq_Browser,0.6571428571
+24,90,Agreeableness,1,0,1,0,freq_Unknown,freq_Social,freq_Comics,freq_Communication,freq_Browser,freq_Unknown,freq_Social,0.6571428571
+25,67,Agreeableness,0,0,1,0,freq_Unknown,freq_Social,freq_Tools,freq_Comics,dur_Comics,freq_Unknown,freq_Social,0.6571428571
+26,77,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,freq_Games,freq_calls,freq_Social,freq_Unknown,0.6571428571
+27,114,Agreeableness,0,1,0,1,freq_Unknown,freq_Social,freq_Games,freq_Productivity,freq_Browser,freq_Unknown,freq_Social,0.6571428571
+28,14,Agreeableness,0,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,dur_Games,freq_Games,freq_Social,freq_Unknown,0.6571428571
+29,54,Agreeableness,1,0,1,0,freq_Unknown,freq_Social,freq_Browser,freq_Communication,freq_Games,freq_Social,freq_Unknown,0.6571428571
+30,13,Agreeableness,1,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Browser,freq_Games,freq_calls,freq_Social,freq_Unknown,0.6571428571
+31,103,Agreeableness,1,1,0,1,freq_Social,freq_Unknown,freq_Games,freq_Travel...Local,dur_Games,freq_Games,freq_Social,0.6571428571
+32,43,Agreeableness,1,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Tools,freq_Browser,freq_Games,freq_Unknown,freq_Productivity,0.6571428571
+33,7,Agreeableness,0,0,0.66666667,0.33333333,freq_Social,freq_Unknown,freq_Browser,freq_Tools,freq_calls,freq_Tools,freq_Social,0.6571428571
+34,108,Agreeableness,0,1,0.33333333,0.66666667,freq_Unknown,freq_Social,freq_Communication,freq_Browser,dur_Games,freq_Social,freq_Unknown,0.6571428571
+0,82,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,freq_Games,dur_Comics,freq_Photography,freq_Communication,freq_Social,0.6857142857
+1,120,Conscientiousness,0,0,1,0,freq_Communication,freq_Social,freq_Tools,freq_calls,freq_Games,freq_Communication,freq_Social,0.6857142857
+2,52,Conscientiousness,0,1,0.33333333,0.66666667,freq_Communication,freq_Tools,dur_calls,freq_Games,freq_Photography,freq_Games,freq_Communication,0.6857142857
+3,16,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,freq_Productivity,dur_Comics,freq_Tools,freq_Productivity,freq_Communication,0.6857142857
+4,72,Conscientiousness,1,0,0.66666667,0.33333333,freq_Communication,dur_Comics,dur_calls,freq_Social,freq_Tools,freq_Social,freq_Communication,0.6857142857
+5,109,Conscientiousness,1,1,0,1,dur_calls,freq_Social,freq_Communication,dur_Comics,dur_Personalization,freq_Social,dur_calls,0.6857142857
+6,17,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,dur_Games,dur_Comics,freq_Browser,dur_Education,freq_Browser,freq_Communication,0.6857142857
+7,118,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,dur_calls,dur_Education,freq_Browser,freq_Social,freq_Communication,0.6857142857
+8,105,Conscientiousness,1,1,0,1,freq_Communication,freq_Photography,freq_Games,freq_calls,dur_Games,freq_Communication,dur_Games,0.6857142857
+9,75,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Games,dur_calls,freq_Tools,freq_Social,freq_Games,freq_Communication,0.6857142857
+10,73,Conscientiousness,0,0,1,0,freq_Social,freq_Communication,freq_Personalization,freq_calls,freq_Tools,freq_Social,freq_Personalization,0.6857142857
+11,44,Conscientiousness,0,0,1,0,freq_Communication,freq_Social,freq_Tools,dur_News...Magazines,dur_Unknown,freq_Social,freq_Communication,0.6857142857
+12,64,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Games,dur_calls,freq_Lifestyle,freq_Social,freq_Games,freq_Communication,0.6857142857
+13,26,Conscientiousness,0,0,0.66666667,0.33333333,freq_Communication,dur_calls,freq_Social,freq_calls,freq_Photography,freq_Social,freq_Communication,0.6857142857
+14,122,Conscientiousness,1,0,1,0,freq_Communication,freq_calls,freq_Social,freq_Tools,freq_Browser,freq_calls,freq_Communication,0.6857142857
+15,61,Conscientiousness,0,1,0,1,freq_Communication,freq_Tools,dur_calls,freq_Comics,freq_Social,freq_Comics,freq_Communication,0.6857142857
+16,124,Conscientiousness,0,1,0.33333333,0.66666667,dur_calls,dur_Games,freq_Tools,freq_calls,freq_Social,freq_Tools,dur_calls,0.6857142857
+17,97,Conscientiousness,1,1,0.33333333,0.66666667,freq_Social,freq_Games,freq_Comics,freq_Browser,freq_Tools,freq_Social,freq_Games,0.6857142857
+18,2,Conscientiousness,0,0,0.66666667,0.33333333,freq_Communication,freq_Games,freq_Personalization,freq_Comics,dur_Comics,freq_Games,freq_Communication,0.6857142857
+19,48,Conscientiousness,0,0,0.66666667,0.33333333,freq_Communication,freq_Games,dur_Games,freq_Social,freq_Tools,freq_Games,freq_Communication,0.6857142857
+20,78,Conscientiousness,0,1,0.33333333,0.66666667,freq_Communication,freq_Photography,freq_Tools,freq_Games,dur_Games,freq_Communication,freq_Games,0.6857142857
+21,51,Conscientiousness,0,1,0.33333333,0.66666667,freq_Communication,freq_Social,freq_Games,dur_calls,freq_Tools,freq_Games,freq_Communication,0.6857142857
+22,20,Conscientiousness,1,0,0.66666667,0.33333333,freq_Communication,freq_Social,dur_Comics,freq_Photography,freq_Unknown,freq_Unknown,freq_Communication,0.6857142857
+23,8,Conscientiousness,0,1,0.33333333,0.66666667,freq_Communication,freq_Tools,freq_Unknown,freq_News...Magazines,freq_Social,freq_Communication,freq_Tools,0.6857142857
+24,90,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,dur_Comics,freq_Tools,dur_Games,freq_Tools,freq_Communication,0.6857142857
+25,67,Conscientiousness,0,0,1,0,freq_Communication,freq_Social,freq_Tools,dur_Comics,freq_Browser,freq_Communication,freq_Social,0.6857142857
+26,77,Conscientiousness,1,0,1,0,freq_Communication,dur_Comics,freq_Social,freq_Browser,dur_calls,dur_Comics,freq_Communication,0.6857142857
+27,114,Conscientiousness,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_Games,freq_Photography,dur_Media...Video,freq_Games,freq_Communication,0.6857142857
+28,14,Conscientiousness,0,0,1,0,freq_Communication,freq_Social,dur_Games,dur_calls,freq_Browser,freq_Social,freq_Communication,0.6857142857
+29,54,Conscientiousness,0,0,0.66666667,0.33333333,dur_calls,freq_calls,freq_Communication,freq_Social,freq_Tools,freq_Communication,dur_calls,0.6857142857
+30,13,Conscientiousness,1,1,0.33333333,0.66666667,freq_Communication,dur_Games,freq_calls,dur_Comics,freq_Social,freq_calls,freq_Communication,0.6857142857
+31,103,Conscientiousness,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_Tools,dur_Personalization,freq_calls,freq_Communication,freq_Social,0.6857142857
+32,43,Conscientiousness,0,0,0.66666667,0.33333333,freq_Tools,freq_Social,freq_Photography,freq_Games,freq_Communication,freq_Social,freq_Tools,0.6857142857
+33,7,Conscientiousness,1,0,1,0,freq_Communication,freq_Tools,freq_Social,freq_Photography,freq_calls,freq_Communication,freq_Tools,0.6857142857
+34,108,Conscientiousness,1,1,0,1,freq_Communication,freq_Social,dur_Games,freq_Productivity,freq_Tools,freq_Communication,freq_Productivity,0.6857142857
+0,82,Openness,1,0,1,0,freq_Communication,freq_Social,freq_Comics,freq_calls,freq_Games,freq_Communication,freq_Games,0.6571428571
+1,120,Openness,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_Unknown,freq_calls,freq_Browser,freq_Communication,freq_Unknown,0.6571428571
+2,52,Openness,0,1,0.33333333,0.66666667,freq_Communication,freq_Browser,freq_Unknown,freq_Sports,dur_Games,freq_calls,freq_Communication,0.6571428571
+3,16,Openness,1,0,0.66666667,0.33333333,freq_Social,freq_Communication,dur_Games,freq_Productivity,freq_Lifestyle,freq_Social,freq_Communication,0.6571428571
+4,72,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,freq_Browser,freq_Unknown,freq_Sports,freq_Browser,freq_Communication,0.6571428571
+5,109,Openness,0,0,0.66666667,0.33333333,freq_Social,dur_calls,dur_Games,freq_Unknown,freq_Browser,dur_calls,freq_Social,0.6571428571
+6,17,Openness,1,0,0.66666667,0.33333333,freq_Communication,dur_Games,dur_Comics,freq_calls,freq_Comics,dur_Games,freq_Communication,0.6571428571
+7,118,Openness,1,1,0,1,freq_Communication,freq_Social,dur_Games,freq_Browser,freq_calls,freq_Browser,freq_Communication,0.6571428571
+8,105,Openness,1,1,0.33333333,0.66666667,freq_Communication,dur_Games,freq_Social,freq_Unknown,freq_calls,freq_Communication,freq_Social,0.6571428571
+9,75,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,dur_calls,freq_Browser,freq_Sports,dur_calls,freq_Communication,0.6571428571
+10,73,Openness,0,1,0.33333333,0.66666667,freq_Social,freq_Browser,freq_calls,dur_Games,freq_Sports,freq_Browser,freq_Social,0.6571428571
+11,44,Openness,0,0,0.66666667,0.33333333,freq_Social,freq_Communication,dur_Comics,freq_Unknown,freq_Sports,dur_Comics,freq_Social,0.6571428571
+12,64,Openness,0,0,0.66666667,0.33333333,freq_Communication,freq_Comics,freq_calls,dur_Games,freq_Finance,freq_Comics,freq_Communication,0.6571428571
+13,26,Openness,1,1,0,1,freq_Communication,freq_Social,dur_Games,freq_Browser,dur_calls,freq_Browser,freq_Communication,0.6571428571
+14,122,Openness,1,1,0,1,freq_Communication,freq_Social,freq_calls,dur_Games,freq_Tools,freq_Tools,freq_Communication,0.6571428571
+15,61,Openness,0,0,0.66666667,0.33333333,dur_Games,freq_Communication,freq_Social,freq_Tools,dur_Comics,dur_Games,freq_Communication,0.6571428571
+16,124,Openness,1,0,1,0,dur_Games,dur_Comics,freq_Social,dur_calls,freq_Medical,dur_Games,dur_Comics,0.6571428571
+17,97,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Social,freq_Sports,dur_Games,dur_Personalization,freq_Communication,0.6571428571
+18,2,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Unknown,freq_Sports,freq_Games,freq_Browser,freq_Unknown,freq_Communication,0.6571428571
+19,48,Openness,1,1,0.33333333,0.66666667,dur_Games,freq_Communication,freq_Social,freq_Games,freq_Browser,dur_Games,freq_Communication,0.6571428571
+20,78,Openness,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_Browser,freq_Sports,dur_Games,freq_Communication,freq_Social,0.6571428571
+21,51,Openness,0,1,0.33333333,0.66666667,freq_Social,freq_Communication,Education_lev,freq_Games,dur_Games,freq_Social,freq_Communication,0.6571428571
+22,20,Openness,0,1,0.33333333,0.66666667,freq_Social,freq_Communication,freq_calls,freq_Sports,freq_Weather,freq_Social,freq_Communication,0.6571428571
+23,8,Openness,0,0,0.66666667,0.33333333,freq_Communication,freq_Unknown,freq_Tools,freq_Sports,freq_Browser,freq_Communication,freq_Unknown,0.6571428571
+24,90,Openness,0,0,0.66666667,0.33333333,freq_Social,freq_Communication,freq_Unknown,freq_calls,freq_Medical,freq_Social,freq_Communication,0.6571428571
+25,67,Openness,1,0,1,0,freq_Communication,freq_Social,freq_Unknown,dur_Games,dur_Comics,freq_Communication,freq_Unknown,0.6571428571
+26,77,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,dur_Games,freq_Sports,dur_Comics,dur_Comics,freq_Communication,0.6571428571
+27,114,Openness,0,0,0.66666667,0.33333333,freq_Social,freq_Communication,freq_Unknown,freq_calls,dur_Games,freq_Social,freq_Communication,0.6571428571
+28,14,Openness,1,1,0.33333333,0.66666667,freq_Communication,freq_Social,dur_Games,dur_Comics,freq_Browser,dur_Comics,freq_Communication,0.6571428571
+29,54,Openness,1,1,0,1,freq_Social,dur_calls,dur_Games,freq_Sports,freq_Comics,dur_calls,freq_Social,0.6571428571
+30,13,Openness,0,1,0.33333333,0.66666667,dur_Games,freq_Communication,freq_Social,freq_calls,freq_Comics,dur_Games,freq_Communication,0.6571428571
+31,103,Openness,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,dur_Games,freq_Sports,freq_Tools,freq_Communication,dur_Games,0.6571428571
+32,43,Openness,1,1,0,1,freq_Communication,freq_Social,freq_Unknown,freq_Tools,freq_Sports,freq_Health...Fitness,freq_Communication,0.6571428571
+33,7,Openness,1,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_calls,freq_Tools,freq_Music...Audio,freq_Communication,freq_calls,0.6571428571
+34,108,Openness,0,1,0.33333333,0.66666667,freq_Social,freq_Unknown,freq_Comics,dur_Music...Audio,freq_calls,freq_Unknown,freq_Social,0.6571428571
+0,82,Emotional Stability,0,0,0.66666667,0.33333333,freq_Games,freq_Communication,freq_Social,freq_Unknown,freq_Browser,freq_Communication,freq_Games,0.6
+1,120,Emotional Stability,0,0,1,0,freq_Games,freq_Communication,freq_Unknown,freq_Social,freq_Browser,freq_Communication,freq_Games,0.6
+2,52,Emotional Stability,0,0,0.66666667,0.33333333,freq_Games,freq_Unknown,freq_Social,freq_Communication,freq_Browser,freq_Unknown,freq_Games,0.6
+3,16,Emotional Stability,1,0,0.66666667,0.33333333,freq_Social,freq_Games,freq_Communication,freq_Unknown,freq_Browser,freq_Social,freq_Communication,0.6
+4,72,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Unknown,freq_Communication,freq_News...Magazines,freq_Travel...Local,freq_Games,freq_Unknown,0.6
+5,109,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Communication,freq_Unknown,dur_calls,dur_Business,freq_Games,freq_Communication,0.6
+6,17,Emotional Stability,1,1,0.33333333,0.66666667,freq_Social,freq_Unknown,freq_Games,dur_Comics,freq_Browser,freq_Games,freq_Social,0.6
+7,118,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Communication,freq_Unknown,freq_Social,dur_Travel...Local,freq_Games,freq_Communication,0.6
+8,105,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Unknown,freq_Communication,freq_Browser,freq_Tools,freq_Unknown,freq_Games,0.6
+9,75,Emotional Stability,0,1,0.33333333,0.66666667,freq_Games,freq_Unknown,freq_Communication,freq_Comics,dur_calls,freq_Comics,freq_Games,0.6
+10,73,Emotional Stability,0,1,0.33333333,0.66666667,freq_Games,freq_Communication,freq_Unknown,freq_Tools,freq_calls,freq_Games,freq_Communication,0.6
+11,44,Emotional Stability,0,0,0.66666667,0.33333333,freq_Communication,freq_Games,freq_Social,freq_Unknown,freq_Browser,freq_Games,freq_Communication,0.6
+12,64,Emotional Stability,0,1,0,1,freq_Games,freq_Social,freq_Unknown,freq_Communication,freq_Browser,freq_calls,freq_Games,0.6
+13,26,Emotional Stability,1,0,0.66666667,0.33333333,freq_Unknown,freq_Games,freq_Communication,freq_Personalization,dur_calls,freq_Games,freq_Unknown,0.6
+14,122,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Unknown,dur_Comics,freq_Communication,freq_calls,freq_Games,freq_Unknown,0.6
+15,61,Emotional Stability,1,0,0.66666667,0.33333333,freq_Browser,freq_Unknown,freq_Communication,freq_Games,freq_Tools,freq_Games,freq_Browser,0.6
+16,124,Emotional Stability,0,0,0.66666667,0.33333333,freq_Games,freq_Communication,freq_Unknown,freq_Lifestyle,freq_calls,freq_Games,freq_Communication,0.6
+17,97,Emotional Stability,1,0,0.66666667,0.33333333,freq_Unknown,freq_Games,dur_Comics,freq_Communication,dur_Travel...Local,freq_Unknown,dur_Comics,0.6
+18,2,Emotional Stability,0,1,0.33333333,0.66666667,freq_Games,freq_Social,freq_Communication,freq_Unknown,freq_Comics,dur_Personalization,freq_Games,0.6
+19,48,Emotional Stability,0,1,0,1,freq_Games,freq_Unknown,freq_Communication,freq_Browser,dur_Games,freq_Browser,freq_Games,0.6
+20,78,Emotional Stability,0,0,0.66666667,0.33333333,freq_Communication,freq_Games,freq_Browser,dur_Comics,freq_Social,freq_Communication,freq_Unknown,0.6
+21,51,Emotional Stability,1,1,0.33333333,0.66666667,freq_Games,freq_Social,freq_Unknown,freq_Communication,freq_Tools,freq_Social,freq_Games,0.6
+22,20,Emotional Stability,1,1,0.33333333,0.66666667,freq_Social,freq_Unknown,freq_Games,freq_Communication,freq_Lifestyle,freq_Social,freq_Unknown,0.6
+23,8,Emotional Stability,0,0,0.66666667,0.33333333,freq_Unknown,freq_Communication,freq_Social,freq_Games,freq_Browser,freq_Unknown,freq_Social,0.6
+24,90,Emotional Stability,0,0,0.66666667,0.33333333,freq_Unknown,freq_Social,freq_Communication,freq_Games,freq_Browser,freq_Unknown,freq_Communication,0.6
+25,67,Emotional Stability,1,0,1,0,freq_Unknown,freq_Communication,freq_Social,freq_Games,freq_Tools,freq_Unknown,freq_Tools,0.6
+26,77,Emotional Stability,0,0,0.66666667,0.33333333,freq_Games,freq_Unknown,freq_Communication,dur_Comics,freq_Social,freq_Games,freq_Unknown,0.6
+27,114,Emotional Stability,0,0,0.66666667,0.33333333,freq_Games,freq_Unknown,freq_Social,freq_Communication,freq_Photography,freq_Unknown,freq_Games,0.6
+28,14,Emotional Stability,1,0,0.66666667,0.33333333,freq_Games,freq_Unknown,freq_Communication,freq_Social,freq_Education,freq_Games,freq_Unknown,0.6
+29,54,Emotional Stability,1,0,0.66666667,0.33333333,freq_Communication,freq_Games,freq_Unknown,dur_Comics,freq_Browser,freq_Games,freq_Communication,0.6
+30,13,Emotional Stability,1,0,0.66666667,0.33333333,freq_Games,freq_Communication,freq_Unknown,freq_Music...Audio,dur_Productivity,freq_Games,freq_Communication,0.6
+31,103,Emotional Stability,0,0,0.66666667,0.33333333,freq_Communication,freq_Social,freq_Games,freq_Unknown,dur_Games,freq_Communication,freq_Unknown,0.6
+32,43,Emotional Stability,1,0,1,0,freq_Unknown,freq_Games,freq_Communication,freq_Tools,freq_Social,freq_Unknown,freq_Communication,0.6
+33,7,Emotional Stability,0,0,1,0,freq_Communication,freq_Social,freq_Browser,freq_Games,freq_Unknown,freq_Communication,freq_Unknown,0.6
+34,108,Emotional Stability,0,0,0.66666667,0.33333333,freq_Unknown,freq_Communication,freq_Social,freq_Games,dur_Comics,freq_Social,freq_Unknown,0.6
